@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+@import url("styles/header.css");
+@import url("styles/home.css");
+@import url("styles/sobre.css");
+@import url("styles/portifolio.css");
+@import url("styles/responsive.css");
+
+:root{
+
+    
+    --cor-primaria:#1e2326;
+    --cor-secundaria: #04e6fa;
+    --cor-terciaria:#fff;
+    --cor-quartenaria:#252a2e;
+
+    --fonte-primaria:'Work Sans';
+    --fonte-secundaria:'Righteous';
+    --fonte-terciaria:'Chakra Petch';
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--fonte-terciaria);
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* permite deslizar com o click do link */
+    scroll-behavior: smooth;
+}
+
+.home{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url("../Imagens/background2.jpg");
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--cor-quartenaria);
+        width: 180px;
+    }
+    
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid var(--cor-terciaria);
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobremim .lista{
+        display: block;
+    }
+
+    .sobremim .lista .col{
+        width: fit-content;
+    }
+
+    .portifolio .galeria{
+        display: block;
+        width: 100%;
+    }
+
+    .portifolio .galeria .projetos{
+        max-width: 100%;
+    }
+
+    .portifolio .galeria .projetos img{
+        width: 100%;
+    }
+}

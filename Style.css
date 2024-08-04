@@ -1,0 +1,26 @@
+/* Style */
+@import url(Styles/header.css);
+@import url(Styles/home.css);
+@import url(Styles/portifolio.css);
+@import url(Styles/sobre.css);
+@import url(Login/Pag1_login.css);
+@import url(Login/Pag2_forgotPW.css);
+@import url(Home/Pag3_home.css);
+
+:root{
+
+/* Paleta de Cores */
+    
+
+/* Fontes */
+    
+}
+
+*{
+    
+}
+
+
+html{
+    
+} 
