@@ -20,7 +20,7 @@
 .home .container-banner img{
     margin-top: 40px;
     display: block;
-    width: 50%;
+    width: auto;
     margin: auto;
     border-radius: 200%;
 }
