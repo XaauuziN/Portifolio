@@ -20,9 +20,9 @@
 .home .container-banner img{
     margin-top: 40px;
     display: block;
-    width: auto;
+    width: 100%;
     margin: auto;
-    border-radius: 5em;
+    border-radius: 10em;
 }
 
 .home .container-banner h1{
