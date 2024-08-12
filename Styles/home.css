@@ -22,7 +22,7 @@
     display: block;
     width: auto;
     margin: auto;
-    border-radius: 200%;
+    border-radius: 10em;
 }
 
 .home .container-banner h1{
