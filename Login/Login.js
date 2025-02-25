@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Login realizado com sucesso!');
 
             // Redirecionar
-            window.location.href = '/Home/Home.html';
+            window.location.href = 'Home/Home.html';
         });
     }
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             alert('Cadastro realizado com sucesso!');
 
-            window.location.href = '/Home/Home.html';
+            window.location.href = 'Home/Home.html';
         });
     }
 
