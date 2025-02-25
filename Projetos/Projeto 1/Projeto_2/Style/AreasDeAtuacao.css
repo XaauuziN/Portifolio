@@ -1,0 +1,89 @@
+.Container_Map{
+    font-family: var(--fonte-primaria);
+    padding: 10em 7em;
+}
+
+#map {
+    height: 40vw;
+    width: 40vw;
+    z-index: 97;
+    margin-bottom:  1em;
+}
+
+
+#info-box {
+    width: 61vw;
+    font-family: var(--fonte-primaria);
+    font-size: 1.8vw;
+    background-color: var(--cor-primaria);
+    border-radius: 30px;
+    color: var(--cor-letra-clara);
+    padding: 1em 1em;
+    display: none;
+}
+
+#close-button{
+    cursor: pointer;
+    width: 15px;
+}
+
+.modal_fade{
+    padding: 10em 5em;
+}
+
+.Title_Vendedores{
+    font-size: 3vw;
+    padding-top: 1em;
+    font-weight: 600;
+}
+
+.Divisor_Vendedores{
+    width: 5.9vw; 
+    height: 0.26vw;
+    background: var(--cor-letra-clara);
+    border-radius: 30px;
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.Lista_Vendedores{
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.Title_Map{
+    font-size: 2.2vw;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.Infos_Map{
+    font-family: var(--fonte-primaria);
+    padding: 0em 7em;
+    margin-bottom: 1em;
+    
+}
+
+.Text_Map{
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.Text_Map a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.Traco_Infos{
+    width: 5.9vw; 
+    height: 0.26vw;
+    background: var(--cor-primaria);
+    border-radius: 30px;
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}

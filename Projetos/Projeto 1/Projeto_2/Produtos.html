@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louri Festas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" type="png" href="img/Logo/menu_icon.png">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="Container_Header">
+        <header>
+            <div class="Header_Logo">
+                <div class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            
+                <div class="side-menu">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i><a href="home.html">Home</a></li>
+                            <li><i class="fa-solid fa-cart-shopping"></i><a href="Produtos.html">Produtos</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i><a href="AreasDeAtuacao.html">Áreas de Atuação</a></li>
+                            <li><i class="fa-solid fa-phone"></i><a href="Contatos.html">Contato</a></li>
+                            <li><i class="fa-solid fa-circle-info"></i><a href="QuemSomos.html">Sobre</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="Privacidade.html">Política e Privacidade</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                
+            <script src="script.js"></script>
+            <script>
+                // Script para abrir e fechar o menu lateral
+                document.addEventListener("DOMContentLoaded", function() {
+                    var hamburger = document.querySelector(".hamburger-menu");
+                    var sideMenu = document.querySelector(".side-menu");
+            
+                    hamburger.addEventListener("click", function() {
+                        sideMenu.classList.toggle("open");
+                    });
+                });
+            </script>
+                <div class="Traco"></div>
+                <a href="home.html"><img class="Logo_Header" src="img/Logo/home1.svg" alt="açai no pote"> </a>
+            </div>
+
+            <div class="navegacao">
+                <nav id="nav">
+                    <ul>
+                        <li><a class="Texto_Header" href="Contatos.html">Entre em contato!</a></li>
+                        <li><a class="Icones_Header" href="+55114156-3559" target="_blank"><i class="fa-solid fa-phone"
+                                    ;></i></a></li>
+                        <li><a class="Icones_Header" href="https://www.instagram.com/lourifestas/" target="_blank"><i
+                                    class="fa-brands fa-instagram" ;></i></a></li>
+                        <li><a class="Icones_Header" href="https://www.facebook.com/lourifestas" target="_blank"><i
+                                    class="fa-brands fa-facebook" ;></i></a></li>
+                        <li><a class="Icones_Header"
+                                href="https://wa.me/5511981153279"
+                                target="_blank"><i class="fa-brands fa-whatsapp" ;></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    </section>
+    <div class="divisor"></div>
+    </header>
+
+    <section class="Seleção_Produtos">
+        <!-- Copo -->
+        <div class="Produtos_Copo" onclick="mostrarListaCopo()">
+            <img src="img/SVG/Copo.svg">
+            <p>Copo</p>
+        </div>
+        <!-- Prato -->
+        <div class="Produtos_Prato">
+            <img src="img/SVG/Prato.svg">
+            <p>Prato</p>
+        </div>
+        <!-- Prato_Q -->
+        <div class="Produtos_Prato_Q">
+            <img src="img/SVG/Prato_Quadrado.svg">
+            <P>Prato Quadrado</P>
+        </div>
+        <!-- Cumbuca -->
+        <div class="Produtos_Cumbuca">
+            <img src="img/SVG/Pote.svg">
+            <p>Cumbuca</p>
+        </div>
+        <!-- Bandeja -->
+        <div class="Produtos_Bandejas onclick=">
+            <img src="img/SVG/Bandeija.svg">
+            <p>Bandeja</p>
+        </div>
+        <div class="Produtos_Neon">
+            <img src="img/SVG/Neon.svg">
+            <p>Linha Neon</p>
+        </div>
+    </section>
+    <div class="Div_Produtos"></div>
+    <!-- Catalogo -->
+    <section class="Catalogo">
+        <div class="Icon_Catalogo">
+            <i class="fa-solid fa-download"></i>
+        </div>
+        <div class="Text_Catalogo">
+            <a href="youtube.com/" target="_blank"><p class="Hover_Catala">Catalogo de Produtos</p></a><div class="Pdf"> PDF</div>
+        </div>
+    </section>
+
+
+    <section class="Copos">
+        <!-- Copo -->
+        <div class="Copo_um">
+            <div class="Border">
+                <div class="bkcp">
+                    <div class="bkimg">
+                        <img class="Img_cp" src="img/Produtos/Copo.png">
+                    </div>
+                    <div class="bktitle">
+                        <p>Nome do produto</p>
+                    </div>
+                    <div class="ulinfo">
+                        <p>Informações:</p>
+                    </div>
+                    <ul class="lista hidden"> <!-- Adicione a classe "hidden" aqui -->
+                        <li>•Referência: CT-080 TR</li>
+                        <li>•Cor: Transparente</li>
+                        <li>•Material: Poliestireno (PS)</li>
+                        <li>•Volume máximo: 80ml</li>
+                        <li>•Caixa: 2500un</li>
+                        <li>•Embalagem: 100un</li>
+                        <li>•Pacote/Unidade: 25 x 100</li>
+                        <li>•C/ Fiscal: 39241000</li>
+                        <li>•INMETRO: 005983/2016</li>
+                        <li>•m³ Individual: 0,028</li>
+                    </ul>
+                    <div class="Revelar">
+                        <i class="fa-solid fa-angle-down Icone_Revelar"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Copo -->
+<div class="Copo_um">
+    <div class="Border">
+        <div class="bkcp">
+            <div class="bkimg">
+                <img class="Img_cp" src="img/Produtos/Copo.png">
+            </div>
+            <div class="bktitle">
+                <p>Nome do produto</p>
+            </div>
+            <div class="ulinfo">
+                <p>Informações:</p>
+            </div>
+            <ul class="lista hidden"> <!-- Adicione a classe "hidden" aqui -->
+                <li>•Referência: CT-080 TR</li>
+                <li>•Cor: Transparente</li>
+                <li>•Material: Poliestireno (PS)</li>
+                <li>•Volume máximo: 80ml</li>
+                <li>•Caixa: 2500un</li>
+                <li>•Embalagem: 100un</li>
+                <li>•Pacote/Unidade: 25 x 100</li>
+                <li>•C/ Fiscal: 39241000</li>
+                <li>•INMETRO: 005983/2016</li>
+                <li>•m³ Individual: 0,028</li>
+            </ul>
+            <div class="Revelar">
+                <i class="fa-solid fa-angle-down Icone_Revelar"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Copo -->
+        <div class="Copo_um">
+            <div class="Border">
+                <div class="bkcp">
+                    <div class="bkimg">
+                        <img class="Img_cp" src="img/Produtos/Copo.png">
+                    </div>
+                    <div class="bktitle">
+                        <p>Nome do produto</p>
+                    </div>
+                    <div class="ulinfo">
+                        <p>Informações:</p>
+                    </div>
+                    <ul class="lista hidden"> <!-- Adicione a classe "hidden" aqui -->
+                        <li>•Referência: CT-080 TR</li>
+                        <li>•Cor: Transparente</li>
+                        <li>•Material: Poliestireno (PS)</li>
+                        <li>•Volume máximo: 80ml</li>
+                        <li>•Caixa: 2500un</li>
+                        <li>•Embalagem: 100un</li>
+                        <li>•Pacote/Unidade: 25 x 100</li>
+                        <li>•C/ Fiscal: 39241000</li>
+                        <li>•INMETRO: 005983/2016</li>
+                        <li>•m³ Individual: 0,028</li>
+                    </ul>
+                    <div class="Revelar">
+                        <i class="fa-solid fa-angle-down Icone_Revelar"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copo -->
+        <div class="Copo_um">
+            <div class="Border">
+                <div class="bkcp">
+                    <div class="bkimg">
+                        <img class="Img_cp" src="img/Produtos/Copo.png">
+                    </div>
+                    <div class="bktitle">
+                        <p>Nome do produto</p>
+                    </div>
+                    <div class="ulinfo">
+                        <p>Informações:</p>
+                    </div>
+                    <ul class="lista hidden"> <!-- Adicione a classe "hidden" aqui -->
+                        <li>•Referência: CT-080 TR</li>
+                        <li>•Cor: Transparente</li>
+                        <li>•Material: Poliestireno (PS)</li>
+                        <li>•Volume máximo: 80ml</li>
+                        <li>•Caixa: 2500un</li>
+                        <li>•Embalagem: 100un</li>
+                        <li>•Pacote/Unidade: 25 x 100</li>
+                        <li>•C/ Fiscal: 39241000</li>
+                        <li>•INMETRO: 005983/2016</li>
+                        <li>•m³ Individual: 0,028</li>
+                    </ul>
+                    <div class="Revelar">
+                        <i class="fa-solid fa-angle-down Icone_Revelar"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+// Descrição dos produtos
+document.addEventListener("DOMContentLoaded", function () {
+            // Seletor para todos os ícones de revelação
+            var iconesRevelar = document.querySelectorAll(".Icone_Revelar");
+
+            // Event listener para cada ícone de revelação
+            iconesRevelar.forEach(function (icone) {
+                icone.addEventListener("click", function () {
+                    // Seletor para a lista de informações mais próxima do ícone clicado
+                    var listaInformacoes = icone.closest(".Copo_um").querySelector(".lista");
+
+                    // Alternar a classe "hidden" para mostrar/ocultar a lista de informações
+                    listaInformacoes.classList.toggle("hidden");
+                });
+            });
+        });
+
+        // Section
+        
+        function mostrarListaCopo() {
+    // Seletor para a seção "Copos"
+    var secaoCopos = document.querySelector(".Copos");
+
+    // Verificar o estado atual da visibilidade da seção "Copos"
+    var visibilidade = window.getComputedStyle(secaoCopos).getPropertyValue("visibility");
+
+    if (visibilidade === "hidden" || visibilidade === "") {
+        // Mostrar a seção "Copos" definindo a visibilidade como "visible"
+        secaoCopos.style.visibility = "visible";
+    } else {
+        // Ocultar a seção "Copos" definindo a visibilidade como "hidden"
+        secaoCopos.style.visibility = "hidden";
+    }
+}
+
+
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <section class="Main_Footer">
+            <div class="Logo_Footer"><a href="home.html"><img src="img/Logo/logocolorida.png" style="width: 20vw"></a></div>
+
+            <div class="Sede_Footer">
+                <p class="Text_Footer">Sede em São Paulo</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="Text_Footer">Rua Gabriel Jorge Salomão, 1080 Fazendinha - Santana de Parnaíba SP - 06530-005</p>
+            </div>
+
+            <div class="Contato_Footer">
+                <p class="Text_Footer">Fale conosco</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-solid fa-phone"></i>
+                <p class="Text_Footer">(11) 4156-3559 <br>(11) 4156-5740</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <p class="Text_Footer">(11) 98115-3279</p>
+            </div>
+        </section>
+
+        <div class="Faixadivisoria"></div>
+
+        <section class="footer-bottom">
+            <small class="copyright">Copyright 2023 © Indústria de Plásticos Lourifestas Eireli <a href="Privacidade.html"
+                    style="text-decoration: none; color:#ffffff">• Politica de Privacidade</a></small>
+        </section>
+    </footer>

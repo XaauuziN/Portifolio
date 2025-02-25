@@ -1,0 +1,23 @@
+.Container_Privacidade{
+    font-family: var(--fonte-primaria);
+    padding: 7em;
+}
+
+.Sub_Title{
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.Text{
+    display: inline;
+    font-size: 1.70vw;
+    font-weight: 100;
+}
+
+.Text a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
