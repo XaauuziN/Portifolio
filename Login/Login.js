@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Redirecionar para a página de home (ou enviar dados para o servidor)
-        window.location.href = '../Home/Home.html';
+        window.location.href = 'Home/Home.html';
         
 
 
