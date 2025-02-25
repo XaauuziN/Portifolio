@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Login realizado com sucesso!');
 
             // Redirecionar
-            window.location.href = 'Home/Home.html';
+            window.location.href = '/Portifolio/Home/Home.html';
+
         });
     }
 
