@@ -1,0 +1,5 @@
+.cartas-container-equipe {
+    display: flex;
+    align-items: center;
+    transition: gap 1em 0.5s ease;
+}

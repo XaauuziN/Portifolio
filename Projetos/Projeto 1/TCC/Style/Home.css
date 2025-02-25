@@ -1,0 +1,384 @@
+/* ------Header--------- */
+
+.Container_Header{
+    background-color: var(--cor-primaria);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+ }
+ 
+ .Container_Header header{
+     max-width: auto;
+     /* margin: 0em 3em 0 3em; */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     
+ }
+ 
+ .Logo_Header{
+     width: 6vw;
+     margin-left: 0.5em;
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: var(--cor-primaria);
+  }
+  
+  nav li {
+    display: inline-block; /* coloca os elementos em linha */
+    z-index: 5;
+  }
+  
+  nav li a {
+    z-index: 5;
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 30px;
+    /* tag a por padrão é inline */
+  }
+  
+  /* exibe uma sombra no menu ao passar o mouse  */
+  nav li a:hover {
+    background-color: rgb(255, 0, 221);
+  }
+  
+  .menu-item {
+    position: absolute;
+    /* Exibe uma sombra no elemento */
+    /* horiz - vertic - espalhamento - cor */
+    box-shadow: var(--cor-primaria);
+    /* não exibe os itens do menu */
+    display: none;
+    color: white;
+    z-index: 2;
+  }
+  
+  .menu-item a {
+    /* coloca os itens do menu na vertical */
+    display: block;
+    color: var(--cor-letra-clara);
+    font-weight: bold;
+    background-color: var(--cor-primaria);
+  }
+  
+
+  
+  .caixa-menu:hover .menu-item {
+    display: block;
+  }
+ 
+ .Texto_Header{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 580;
+ }
+ 
+ .Icones_Header{
+     color:var(--cor-terciaria);
+     font-size: 1.9em;
+ }
+ 
+ .Menu_Header{
+     color:var(--cor-terciaria);
+     font-size: 1.5vw;
+ }
+ 
+ .Header_Logo{
+     align-items: center;
+     display: flex;
+ }
+ 
+ .Traco{
+     margin-left: 1em;
+     width: 0.04vw; 
+     height: 1.6vw; 
+     border: 1px #ffffff solid;
+     border-radius: 15px;
+     background-color:var(--cor-terciaria);
+     align-items: center;
+ }
+ 
+ .Menu_Header:hover{
+     color: var(--cor-quintenaria);
+     transition: .3s;
+ }
+ 
+ .navegacao nav ul a:hover{
+     color: var(--cor-quintenaria);
+     transition: .3s;
+ }
+ 
+ .Traco:hover{
+     border: 1px var(--cor-quintenaria) solid;
+     transition: .3s;
+ }
+
+ .mobile-icon {
+    display: none; /* Ocultar o ícone por padrão */
+  }
+  
+  /* Mostrar o ícone apenas em telas com largura máxima de 768px (tamanhos de tela de celular) */
+  @media (max-width: 768px) {
+    .mobile-icon {
+      display: block; /* Exibir o ícone em telas menores */
+    }
+  }
+
+  /* ----------------Boas vindas------------ */
+ 
+
+.background_1{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../IMG/Background/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.background_2{
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+/* cards */
+
+.cartas-container {
+    display: flex;
+    align-items: center;
+    transition: gap 1em 0.5s ease;
+}
+
+.carta {
+    width: 11vh;
+    height: 28vh;
+    border-radius: 2em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, margin-left 0.5s ease;
+    
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.carta.selecionada {
+    margin-right: 25em; /* Empurra apenas a carta selecionada */
+}
+
+.carta-1.selecionada { box-shadow: 0 0 20px #00ff00; }
+.carta-2.selecionada { box-shadow: 0 0 20px #ff7b00; }
+.carta-3.selecionada { box-shadow: 0 0 20px #d356df; }
+.carta-4.selecionada { box-shadow: 0 0 20px #00d9ff; }
+.carta-5.selecionada { box-shadow: 0 0 20px #ffff00; }
+.carta-6.selecionada { box-shadow: 0 0 20px #00ff04; } 
+
+
+.carta-1 .carta-texto { color:#00ff00; }
+.carta-2 .carta-texto { color:#ff7b00; }
+.carta-3 .carta-texto { color:#d356df; }
+.carta-4 .carta-texto { color:#00d9ff; }
+.carta-5 .carta-texto { color:#ffff00; }
+.carta-6 .carta-texto { color:#00ff04; }
+
+.carta-texto {
+    writing-mode: vertical-rl;
+    text-orientation: upleft;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.info-lateral {
+    font-size: 1.5vw;
+    display: none;
+    position: absolute;
+    left: 115%;
+    width: 30vh;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-left: 0.7em;
+    padding-top: 1.5em;
+    border-radius: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carta.selecionada .info-lateral {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Quando uma carta é selecionada, desloca as cartas à direita */
+.deslocar {
+    margin-right: 300px;
+}
+
+/* Imagens de fundo */
+.carta-1 { background-image: url('../IMG/Background/ex-hacker.jpg'); }
+.carta-2 { background-image: url('../IMG/Background/Refugio\ ambiental.jpg'); }
+.carta-3 { background-image: url('../IMG/Background/cientista\ desiludido.jpg'); }
+.carta-4 { background-image: url('../IMG/Background/rebelde\ urbano.jpg'); }
+.carta-5 { background-image: url('../IMG/Background/operativo\ corporativo.jpg'); }
+.carta-6 { background-image: url('../IMG/Background/nativo\ eco.jpg'); }
+
+
+
+
+
+.title{
+    color: var(--cor-letra-clara);
+    text-shadow: 5px 5px 7px var(--cor-contorno); /* Corrigido */
+    font-size: 5vw;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    margin-right: 3em;
+}
+
+.title_black{
+    color: var(--cor-letra-clara);
+    text-shadow: 10px 10px 10px black; /* Corrigido */
+    font-size: 5vw;
+    margin-top: 0.8em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.text {
+    color: var(--cor-letra-clara);
+    text-shadow: 5px 5px 7px var(--cor-contorno); /* Corrigido */
+    font-size: 2.5vw;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.background_3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../IMG/Background/background_2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50em; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill_list{
+    margin-top: 1em;
+    color: var(--cor-letra-clara);
+    font-size: 2.5vw;
+    text-shadow: 10px 10px 8px var(--cor-contorno);
+    list-style-image: url('../IMG/Utilitarios/arrow.png');
+}
+
+h1 {
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-shadow: 1em 1em 1em 5em;
+    color: var(--cor-letra-clara);
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-letra-clara);
+    gap: 20px;
+}
+
+.member{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar img{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50em;
+    background-color: #ccc;
+}
+
+.name_1{
+    color: pink;
+    font-size: 3vw;
+}
+
+.name_2{
+    color: red;
+    font-size: 3vw;
+}
+
+.name_3{
+    color: purple;
+    font-size: 3vw;
+}
+
+.name_4{
+    color: blue;
+    font-size: 3vw;
+}
+
+
+.name_5{
+    color: green;
+    font-size: 3vw;
+}
+
+  /* --------------FOOTER------------- */
+
+.Main_Footer{
+    margin-top: 1em;
+    font-family: var(--fonte-primaria);
+    text-shadow: 2px 2px 4px black;
+    font-size: 1vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: Center;
+}
+
+  .footer-bottom {
+    width: 100%;
+    height: 4.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+}
+
+.copyright{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-letra-clara);
+    text-decoration: none;
+    font-size: 1.5vw;
+}

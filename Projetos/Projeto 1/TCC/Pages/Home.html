@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost In The ECO</title>
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="icon" type="png" href="img/Logo/menu_icon.png"> -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="Container_Header">
+        <header>
+
+            <div class="navegacao">
+                <nav>
+                    <ul>
+            
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Download.html">Download</a></li>
+                        <li class="caixa-menu">
+                            <a style="cursor: pointer;">Sobre o Projeto</a>
+                            <div class="menu-item">
+                                <a href="Page_1.html">O que é um RPG?</a>
+                                <a href="Page_2.html">Sobre o tema</a>
+                                <a href="Page_3.html">Desenvolvimento</a>
+                                <a href="Page_4.html">Conclusão</a>
+                            </div>
+                        </li>
+            
+                        <li class="caixa-menu">
+                            <a style="cursor: pointer;">Sobre nós</a>
+                            <div class="menu-item">
+                                <a href="https://www.cps.sp.gov.br/cursos-etec/informatica/">Sobre o Curso</a>
+                                <a href="Equipe.html">Equipe</a>
+                                <a href="Privacy.html">Politica e Privacidade</a>
+                            </div>
+            
+                        <li><a href="Page_6.html">Contato</a></li>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+        <main class="BV">
+            <div class="background_1">
+                <h1 class="title">Boas vindas a Lost in the ECO</h1>
+                <p class="text">Em um futuro não muito distante, corporações tecnológicas dominaram todos os aspectos da vida humana. Exploração desenfreada de recursos naturais levou o planeta a um colapso ambiental irreversível. Os poucos habitats ainda vivos existem apenas dentro do *ECO* (Ecological Constructive Operations), um sistema digital avançado gerido por uma IA que tenta recriar e preservar fragmentos da natureza perdida.
+
+                    A humanidade vive em cidades-ruínas tecnológicas, dependentes das corporações que controlam o ECO. Esses gigantes corporativos usam o sistema tanto para lucro quanto para manter o controle, transformando o ECO em um campo de batalha onde ecossistemas artificiais e programas de defesa cibernética colidem. No entanto, um grupo de indivíduos, conhecidos como *Exploradores Livres*, conseguiu hackear o sistema para atravessar entre o mundo real e o ECO. Vocês são esses Exploradores Livres.
+                    
+                    O seu objetivo? Sabotar as corporações, restaurar a liberdade da Terra e salvar o que resta do planeta antes que o ECO seja consumido pela corrupção.</p>
+            </div>
+            <div class="background_2">
+                <h1 class="title_black">Crie Seu Próprio personagem</h1>
+                <div class="cartas-container" id="cartas-container">
+                    <div class="carta carta-1" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Ex-Hacker</div>
+                        <div class="info-lateral">Um gênio da invasão digital que já esteve no topo do submundo cibernético, mas algo deu errado. Traído, exposto ou simplesmente cansado da guerra digital, agora busca um novo propósito. Ainda possui habilidades letais na rede, mas evita chamar atenção—afinal, sabe bem o preço de ser caçado.</div>
+                    </div>
+                    <div class="carta carta-2" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Refugiado Ambiental</div>
+                        <div class="info-lateral">Criado longe do caos urbano, cresceu em comunidades isoladas que lutam contra corporações devastadoras. Conhece tecnologias sustentáveis, sabe sobreviver sem depender da cidade e despreza a sociedade hiperconectada. No entanto, a realidade bateu à porta—e agora precisa agir antes que sua casa seja destruída.</div>
+                    </div>
+                    <div class="carta carta-3" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Cientista Desiludido</div>
+                        <div class="info-lateral">Passou anos servindo a megacorporações, acreditando que a tecnologia mudaria o mundo para melhor. Mas descobriu da pior forma que suas criações eram apenas armas para os poderosos. Agora, busca redenção, usando sua mente brilhante para enfrentar o mesmo sistema que ajudou a construir.</div>
+                    </div>
+                    <div class="carta carta-4" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Rebelde Urbano</div>
+                        <div class="info-lateral">Nascido e moldado pelo caos das ruas, luta contra a opressão com inteligência, força e pura audácia. Pode ser um líder revolucionário, um ativista digital ou apenas alguém que quer ver o mundo queimar. Detesta autoridades e não teme se sujar para desafiar o status quo.  </div>
+                    </div>
+                    <div class="carta carta-5" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Operativo Corporativo</div>
+                        <div class="info-lateral">Treinado desde cedo para servir à máquina corporativa, era apenas mais uma engrenagem do sistema—até perceber que era descartável. Agora, joga seu próprio jogo, usando seu conhecimento de protocolos, segurança e política suja para sobreviver e, quem sabe, virar a mesa contra seus antigos empregadores.</div>
+                    </div>
+                    <div class="carta carta-6" onclick="selecionarCarta(this)">
+                        <div class="carta-texto">Operativo Corporativo</div>
+                        <div class="info-lateral"></div>
+                    </div>
+                </div>
+            
+                <script src="../Script/Cards.js"></script>
+                </div>
+            </div>
+            <div class="background_3">
+                <h1 class="title">Molde sua historia</h1>
+                <ul class="skill_list">
+                    <li>FORÇA: Potência física.</li>
+                    <li>DESTREZA: Precisão manual e técnica.</li>
+                    <li>AGILIDADE: Reflexos e mobilidade</li>
+                    <li>RESISTÊNCIA: Capacidade de suportar dano e estresse</li>
+                    <li>DESCOBERTA: Percepção e análise de pistas</li>
+                    <li>COMPUTADOR: Habilidades de hacking e manipulção digital</li>
+                    <li>ENGENHARIA: Conhecimento em criação e reparo</li>
+                </ul>
+            </div>
+            <div class="background_4">
+                <h1>Conheça Nossa Equipe</h1>
+
+    <div class="team">
+        <div class="member">
+            <div class="avatar"><img src="../IMG/Equipe/isaac.jpeg" alt=""></div>
+            <div class="name_1">Isaac Gabriel - Desenvolvedor Geral</div>
+        </div>
+        <div class="member">
+            <div class="name_2">Felipe Kaue - Design Gráfico</div>
+            <div class="avatar"><img src="../IMG/Equipe/Kaue.jpeg" alt=""></div>
+        </div>
+        <div class="member">
+            <div class="avatar"><img src="../IMG/Equipe/joao.jpeg" alt=""></div>
+            <div class="name_3">João Gabriel - Roteirista</div>
+        </div>
+        <div class="member">
+            <div class="name_4">Gabriel Felício - Desenvolvedor Front/Back</div>
+            <div class="avatar"><img src="../IMG/Equipe/EU.jpeg" alt=""></div>
+        </div>
+        <div class="member">
+            <div class="avatar"><img src="../IMG/Equipe/miguel.jpeg" alt=""></div>
+            <div class="name_5">Miguel Angelo - Analista e Suporte</div>
+        </div>
+    </div>
+                
+            </div>
+
+        </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="Main_Footer">
+            <!-- <div class="Logo_Footer"><a href="home.html"><img src="img/Logo/logocolorida.png" style="width: 20vw"></a></div> -->
+
+        <section class="footer-bottom">
+            <small class="copyright">Copyright 2023 © Lost In The ECO <a href="Privacy.html"
+                    style="text-decoration: none; color:#ffffff">• Politica de Privacidade</a></small>
+        </section>
+    </footer>
+</body>
+
+</html>

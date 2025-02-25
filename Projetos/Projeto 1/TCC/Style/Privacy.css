@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 5em;
+    color: var(--cor-letra-clara);
+    text-shadow: var(--cor-contorno);
+}
+.title {
+    text-align: center;
+    font-size: 3vw;
+}
+.subtitle {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 2vw;
+    list-style: none;
+    list-style-image: url(../IMG/Utilitarios/arrow.png);
+}
+
+.list-item{
+    font-size: 3vw;
+}
+
+.list-item::before {
+    font-weight: bold;
+    text-shadow: var(--cor-contorno);
+}
