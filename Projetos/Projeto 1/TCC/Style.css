@@ -2,6 +2,15 @@
 @import url(Style/Home.css);
 @import url(Style/Privacy.css);
 @import url(Style/WhoUS.css);
+@import url(Style/Conclusão.css);
+@import url(Style/Contato.css);
+@import url(Style/Desenvolvimento.css);
+@import url(Style/Download.css);
+@import url(Style/Equipe.css);
+@import url(Style/OQRPG.css);
+@import url(Style/Tema.css);
+
+
 :root{
 
     /* Paleta de Cores */

@@ -12,7 +12,8 @@
 }
 .subtitle {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
+    line-height: 1.0;
 }
 
 .list {
@@ -23,7 +24,7 @@
 }
 
 .list-item{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .list-item::before {

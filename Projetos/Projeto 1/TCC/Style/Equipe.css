@@ -1,5 +1,120 @@
-.cartas-container-equipe {
+.equipe_cards {
     display: flex;
-    align-items: center;
-    transition: gap 1em 0.5s ease;
+    gap: 2em;
+    margin-top: 11.2em;
+    padding: 10em;
+}
+
+/* Estilo para o Card */
+.card {
+    width: 17vw;
+    height: 20vw;
+    background: var(--cor-primaria);
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px purple;
+    position: relative; /* Necessário para o efeito de rotação */
+    transform-style: preserve-3d; /* Permite rotação 3D */
+    transition: transform 0.6s; /* Transição suave ao girar */
+    cursor: pointer;
+}
+
+/* Contêiner interno para a rotação */
+.card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Estilo para a parte superior do card */
+.card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: purple;
+    margin: auto;
+    border-radius: 15px;
+}
+
+/* Estilo para o nome */
+.card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 3vw;
+}
+
+/* Estilo para o cargo */
+.card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 2vw;
+}
+
+/* Estilo para a imagem do card */
+.card .img {
+    width: 5vw;
+    height: 5vw;
+    background: purple;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Estilo para o botão */
+.card button {
+    font-size: 1.5vw;
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: rgba(128, 0, 128, 0.486);
+    color: white;
+    font-weight: 600;
+}
+
+/* Efeito de hover no botão */
+.card button:hover {
+    background: rgb(128, 0, 128);
+}
+
+/* Estilos para a rotação */
+.card.flipped .card-inner {
+    transform: rotateY(180deg); /* Gira o conteúdo do card */
+}
+
+/* Estilos para a frente e verso do card */
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    backface-visibility: hidden; /* Esconde o conteúdo quando virado */
+}
+
+/* Estilo para a frente do card */
+.card .front {
+    
+    border-radius: 0px 0px 15px 15px;
+    /* Todo o conteúdo que será mostrado inicialmente */
+}
+
+/* Estilo para o verso do card */
+.card .back {
+    background: var(--cor-primaria); /* Cor do verso */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    transform: rotateY(180deg); /* Inicia o verso virado */
+}
+
+.text_equipe{
+    font-size: 1.3vw;
 }
