@@ -19,8 +19,7 @@
 .list {
     list-style-type: none;
     font-size: 2vw;
-    list-style: none;
-    list-style-image: url(../IMG/Utilitarios/arrow.png);
+    /* list-style-image: url(../IMG/Utilitarios/arrow.png); */
 }
 
 .list-item{

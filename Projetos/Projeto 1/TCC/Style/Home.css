@@ -143,7 +143,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url(../IMG/Background/background.jpg) no-repeat center center;
     background-size: cover;
-    height: 100vh; /* Ajuste conforme necessário */
+    height: 50vw; /* Ajuste conforme necessário */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +153,7 @@
 .background_2{
     background-color: var(--cor-primaria);
     width: 100%;
-    height: 70vh;
+    height: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,8 +169,8 @@
 }
 
 .carta {
-    width: 11vh;
-    height: 28vh;
+    width: 5.5vw;
+    height: 14vw;
     border-radius: 2em;
     background-size: cover;
     background-position: center;
@@ -221,8 +221,8 @@
     display: none;
     position: absolute;
     left: 115%;
-    width: 30vh;
-    height: 35vh;
+    width: 16vw;
+    height: 20vw;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding-left: 0.7em;
@@ -284,7 +284,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url(../IMG/Background/background_2.jpg) no-repeat center center;
     background-size: cover;
-    height: 50em; /* Ajuste conforme necessário */
+    height: 35vw; /* Ajuste conforme necessário */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,8 +294,9 @@
     margin-top: 1em;
     color: var(--cor-letra-clara);
     font-size: 2.5vw;
+    list-style: none;
     text-shadow: 10px 10px 8px var(--cor-contorno);
-    list-style-image: url('../IMG/Utilitarios/arrow.png');
+    /* list-style-image: url('../IMG/Utilitarios/arrow.png'); */
 }
 
 h1 {
