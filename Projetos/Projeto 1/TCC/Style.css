@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import url(Style/Home.css);
 @import url(Style/Privacy.css);
 @import url(Style/WhoUS.css);
@@ -21,10 +22,11 @@
     
     /* Fontes */
         --fonte-primaria:'Micro 5';
+        --fonte-secundaria:'Jersey 10' ;
     }
     
     *{
-        font-family: var(--fonte-primaria);
+        font-family: var(--fonte-secundaria);
     }
     
     
