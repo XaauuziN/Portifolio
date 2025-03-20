@@ -142,9 +142,10 @@
 }
 
 .text_equipe{
+    line-height: 90%;
     margin: 0.5em;
     cursor:default;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
