@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=405, initial-scale=1">
     <title>Lost In The ECO</title>
     <link rel="stylesheet" href="../Style.css">
     <link rel="stylesheet" href="reset.css">
@@ -48,6 +48,7 @@
         </header>
     </section>
 
+    <main class="main">
     <section class="equipe_cards">
         <div class="card">
             <div class="card-inner">
@@ -132,7 +133,7 @@
                     </div>
                     <span style="cursor: default;">Felício</span>
                     <p class="job" style="cursor: default;"> Desenvolvedor</p>
-                    <button onclick="flipCard()">Exibir Mais</button>
+                    <button onclick="flipCard()" style="align-self: center;">Exibir Mais</button>
                 </div>
                 <!-- Parte de trás do card -->
                 <div class="back">
@@ -140,8 +141,8 @@
                     <div class="text_equipe">
                     <p>Mais informações sobre Felicio:</p>
                     <br>
-                    <p >"Sou Gabriel tenho 21 anos, e desde muito novo sempre fui apaixonado por tecnologia, sempre montava e desmontava celulares e computadores por diversão e hoje isso me tornou o técnico que sou. Pretendo utilizar o curso de TI para seguir na área militar, que também é uma carreira que admiro"</p></div>
-                    <button onclick="flipCard()">Exibir Menos</button>
+                    <p style="flex-wrap: nowrap; line-height: 0.9em; text-wrap: wrap;">"Sou Gabriel tenho 21 anos, e desde muito novo sempre fui apaixonado por tecnologia, sempre montava e desmontava celulares e computadores por diversão e hoje isso me tornou o técnico que sou. Pretendo utilizar o curso de TI para seguir na área militar, que também é uma carreira que admiro"</p></div>
+                    <button class="card_button" onclick="flipCard()">Exibir Menos</button>
                 </div>
             </div>
         </div>
@@ -171,6 +172,7 @@
         </div>
    <script src="../Script/Equipe.js"></script>
 </section>
+</main>
     <!-- Footer -->
     <footer>
         <section class="Main_Footer">
