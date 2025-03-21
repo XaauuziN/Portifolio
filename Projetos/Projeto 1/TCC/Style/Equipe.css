@@ -10,8 +10,8 @@
     gap: 1em;
     flex-wrap: wrap;
     
-    /* margin-top: 11.2em;
-    margin-bottom: 21.3em; */
+    margin-top: 11.2em;
+    /* margin-bottom: 21.3em; */
 }
 
 /* Estilo para o Card */
@@ -21,14 +21,15 @@
     background-attachment: fixed;
     background-size: contain;
     text-align: center;
-    margin-top: 11.2em;
-    margin-bottom: 21.3em;
+    /* margin-top: 11.2em; */
+    /* margin-bottom: 21.3em; */
     border-radius: 15px;
     box-shadow: 1px 5px 60px 0px purple;
     transform-style: preserve-3d; /* Permite rotação 3D */
     transition: all 0.5s ease-in; /* Transição suave ao girar */
+    max-width: 17vw; /* Evita que os cards fiquem muito grandes */
+    min-width: 10vw; /* Evita que os cards fiquem muito pequenos */
 }
-
 
 
 
