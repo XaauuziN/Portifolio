@@ -138,7 +138,7 @@
     /* Ícone do menu hambúrguer */
     .mobile-menu-icon {
         display: block;
-        font-size: 2em;
+        font-size: 4vw;
         cursor: pointer;
         color: white;
         position: absolute;
@@ -151,9 +151,10 @@
     .mobile-menu {
         display: none;
         position: fixed;
+        font-size: 2vw;
         top: 0;
         right: 0;
-        width: 70%;
+        width: 30vw;
         height: 100vh;
         background-color: var(--cor-primaria);
         box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
@@ -221,7 +222,7 @@
 
 .cartas-container {
     display: flex;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .carta {
@@ -251,9 +252,9 @@
     margin-left: 5em;
 } */
 
-@media (min-width: 402px) {
+@media (min-width: 111px) {
     .carta.selecionada {
-      margin-right: 11.5em;
+      margin-right: 12em;
     }
   }
 
