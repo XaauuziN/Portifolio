@@ -30,6 +30,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para IE e Edge */
+}
+body::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari e Edge */
 }
 ol, ul {
 	list-style: none;

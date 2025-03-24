@@ -10,7 +10,7 @@
 @import url(Style/Equipe.css);
 @import url(Style/OQRPG.css);
 @import url(Style/Tema.css);
-
+@import url('primeicons/primeicons.css');
 
 :root{
 
@@ -27,6 +27,8 @@
     
     *{
         font-family: var(--fonte-secundaria);
+        scrollbar-width: none; /* Para Firefox */
+        -ms-overflow-style: none; /* Para IE e Edge */
     }
     
     

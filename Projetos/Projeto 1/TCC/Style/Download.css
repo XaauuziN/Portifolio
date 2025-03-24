@@ -1,13 +1,9 @@
 .back_down{
-    /* margin: 10em;  */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url(../IMG/Background/download.gif) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../IMG/Background/download.gif) no-repeat center center;
     background-size: cover;
-    height: 50vw; /* Ajuste conforme necessário */
+    height: 50vw;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    margin-top: 5em;
 }
 
 .title_down{
@@ -26,7 +22,6 @@
 }
 
 .carousel {
-    /* margin-top: 10em; */
     width: 60vw;
     height: 100vw;
     overflow: hidden;
