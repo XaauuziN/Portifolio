@@ -1,0 +1,273 @@
+.Container_Grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10em;
+    height: 46.7vw;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.Container_Contatos, .Container_Informacoes{
+    margin-top: 5em;
+    
+    margin-bottom: 5em;
+    padding-bottom: 5em;
+}
+
+@media (max-width: 1023px) {
+    .Container_Grid {
+      gap: 1em;
+    }
+  }
+  @media (max-width: 1023px) {
+    .Container_Grid {
+      margin-top: 2em;
+    }
+  }
+
+
+
+.Titulo{
+    font-size: 3vw;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px 7px var(--cor-contorno);
+}
+
+.Texto{
+    font-size: 1.5vw;
+    font-weight: lighter;
+    padding-top: 2em;
+    color: white;
+}
+
+.Envio_Contatos form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 37.2vw;
+    height: 1vw;
+}
+
+.Envio_Contatos form input{
+    font-weight: lighter;
+    padding: 0.5em;
+    font-size: 1.2vw;
+    margin-bottom: 0.5em; 
+}
+
+.Envio_Contatos form textarea {
+    width: 37.2vw;
+    min-height: 5vw; 
+    max-height: 26.0vw; 
+    resize:none;
+    padding: 0.5em;
+    font-size: 1.2vw;
+    font-weight: lighter;
+  }
+
+.Envio_Contatos form label{
+    font-size: 1.5vw;
+    font-weight: lighter
+}
+
+  .Teste{
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 1.6vw;
+    color: white;
+}
+
+.Envio_Contatos form input label{
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+/* Informações de Contatos */
+.Container_Informacoes{
+    font-family: var(--fonte-primaria);
+    color: white;
+}
+
+.Siga{
+    font-size: 1.5vw;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.Redes{
+    font-size: 1.5vw;
+    padding-top: 0.5em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.Img_Info{
+    padding-top: 2em;
+}
+
+.Outras_Formas{
+    font-size: 1.5vw;
+    font-style: italic;
+    padding-top: 2em;
+}
+
+.Informacoes2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.Contato_Telefone{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 2em;
+}
+
+.Contato_WhatsApp{
+    padding-top: 1em;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.Phone_Icon,
+.Whatsapp_Icon{
+    color: var(--cor-primaria);
+    font-size: 1.3vw;
+    position: relative;
+    top: -3.4em;
+    left: -2.1em;
+    padding: 0.5em;
+}
+
+.Email_Text{
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 100;
+}
+.Icon_Email{
+    color: var(--cor-primaria);
+    position: relative;
+    font-size: 1.3vw;
+    top: -1em;
+    left: -1.6em
+}
+
+/* Befores */
+.Traco_Titulo{
+    width: 5.9vw; 
+    height: 0.26vw;
+    background: var(--cor-primaria);
+    border-radius: 30px;
+    position: relative;
+    top: 0.5em;
+}
+
+.Traco_Info3{
+    width: 5.9vw; 
+    height: 0.26vw; 
+    background: var(--cor-primaria);
+    border-radius: 30px;
+    left: -2.5em;
+    top: 1em;
+}
+
+.Traco_Info4{
+    width: 5.9vw; 
+    height: 0.26vw; 
+    background: var(--cor-primaria);
+    border-radius: 30px;
+    top: -0.5em;
+    left: -2.5em;
+}
+
+.Traco_Info5{
+    width: 5.9vw; 
+    height: 0.26vw; 
+    background: var(--cor-primaria);
+    border-radius: 30px;
+    top: 1.9em;
+    left: -2.5em;
+}
+
+.Faixa_divisoria{
+    margin-top: 4em;
+}
+
+/* Botão Animado */
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: -300px;
+  }
+
+
+/* From Uiverse.io by Sergestra */ 
+.contato{
+    /* margin-top: 5em; */
+    outline: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 2.9vw;
+    border-radius: 0.5em;
+    box-shadow: 0 0.625em 1em 0 rgba(98, 3, 136, 0.35);
+    overflow: hidden;
+   }
+
+   @media (max-width: 1980px) {
+    .contato {
+      margin-top: 1em;
+    }
+  }
+   
+   button div {
+    transform: translateY(0px);
+    width: 100%;
+   }
+   
+   button,
+   button div {
+    transition: 0.6s cubic-bezier(.16,1,.3,1);
+   }
+   
+   button div span {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2.9vw;
+    font-weight: lighter;
+   }
+   
+   button div:nth-child(1) {
+    background-color: var(--cor-primaria)
+   }
+   
+   button div:nth-child(2) {
+    background-color: #21dc62;
+   }
+   
+   button:hover {
+    box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+   }
+   
+   button:hover div {
+    transform: translateY(-50px);
+   }
+   
+   button p {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    color: #ffffff;
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
