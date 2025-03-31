@@ -10,7 +10,7 @@
     justify-content: center;
     gap:10em;
     flex-wrap: wrap;
-    /* margin-top: 11.2em; */
+    
     padding: 10em;
 }
 
@@ -30,12 +30,12 @@
     text-align: center;
     border-radius: 15px;
     box-shadow: 1px 5px 60px 0px purple;
-    transform-style: preserve-3d; /* Permite rotação 3D */
-    transition: all 0.5s ease-in; /* Transição suave ao girar */
-    max-width: 17vw; /* Evita que os cards fiquem muito grandes */
-    min-width: 10vw; /* Evita que os cards fiquem muito pequenos */
+    transform-style: preserve-3d; 
+    transition: all 0.5s ease-in; 
+    max-width: 17vw; 
+    min-width: 10vw; 
 }
-/* Contêiner interno para a rotação */
+
 .card .card-inner {
     width: 17vw;
     height: 21vw;
@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-/* Estilo para a parte superior do card */
+
 .card .card-border-top {
     width: 10vw;
     height: 0.3vw;
@@ -56,7 +56,7 @@
     margin: auto;
 }
 
-/* Estilo para o nome */
+
 .card span {
     font-weight: lighter;
     color: white;
@@ -66,7 +66,7 @@
     font-size: 3vw;
 }
 
-/* Estilo para o cargo */
+
 .card .job {
     font-weight: 400;
     color: white;
@@ -76,7 +76,7 @@
     font-size: 2vw;
 }
 
-/* Estilo para a imagem do card */
+
 .card .img {
     width: 5vw;
     height: 5vw;
@@ -86,7 +86,7 @@
     margin-top: 0.5em;
 }
 
-/* Estilo para o botão */
+
 .card button {
     font-size: 1.5vw;
     width: 10vw;
@@ -99,6 +99,7 @@
     cursor: pointer;
     text-wrap: nowrap;
     margin-top: 0.5em;
+    font-weight: lighter;
 }
 
 .button_card{
@@ -111,35 +112,29 @@
     color: white;
     font-weight: 600;
     cursor: pointer;
+    font-weight: lighter;
 }
 
-/* Efeito de hover no botão */
 .card button:hover {
     background: rgb(128, 0, 128);
 }
 
-/* Estilos para a rotação */
 .card.flipped .card-inner {
-    transform: rotateY(180deg); /* Gira o conteúdo do card */
+    transform: rotateY(180deg); 
 }
 
-/* Estilos para a frente e verso do card */
 .card .front, .card .back {
     position: absolute;
     width: 25vw;
     border-radius: 15px;
     height: 21vw;
-    backface-visibility: hidden; /* Esconde o conteúdo quando virado */
+    backface-visibility: hidden; 
 }
 
-/* Estilo para a frente do card */
 .card .front {
-    
     border-radius: 0px 0px 15px 15px;
-    /* Todo o conteúdo que será mostrado inicialmente */
 }
 
-/* Estilo para o verso do card */
 .card .back {
     background-color: #68037A;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%2368037A' cx='50' cy='0' r='50'/%3E%3Cg fill='%23640375' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23600371' cx='50' cy='100' r='50'/%3E%3Cg fill='%235c036c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23580367' cx='50' cy='200' r='50'/%3E%3Cg fill='%23540363' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2350025e' cx='50' cy='300' r='50'/%3E%3Cg fill='%234c0259' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23480255' cx='50' cy='400' r='50'/%3E%3Cg fill='%23440250' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2341024c' cx='50' cy='500' r='50'/%3E%3Cg fill='%233d0247' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23390242' cx='50' cy='600' r='50'/%3E%3Cg fill='%2335023e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23310239' cx='50' cy='700' r='50'/%3E%3Cg fill='%232d0234' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23290130' cx='50' cy='800' r='50'/%3E%3Cg fill='%2325012b' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23210126' cx='50' cy='900' r='50'/%3E%3Cg fill='%231d0122' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2319011D' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
@@ -160,4 +155,5 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    text-align: justify;
 }

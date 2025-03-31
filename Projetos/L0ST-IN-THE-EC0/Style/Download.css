@@ -1,11 +1,7 @@
-.Main_down{background: linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)),url(../IMG/Background/download.gif) no-repeat center center;
-  background-size: cover;
-  height: 51.5vw;
-
-}
-
 .back_down{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../IMG/Background/download.gif) no-repeat center center;
+    background-size: cover;
+    height: 50vw;
     display: flex;
     flex-direction: column;
 }
@@ -23,89 +19,4 @@
     font-size: 2vw;
     color: white;
     text-shadow: 5px 7px var(--cor-contorno);
-}
-
-
-.down_button{
-  display: flex;
-  justify-content: center;
-  margin-top: 100em;
-}
-
-.cssbuttons-io-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: white;
-  background: linear-gradient(
-    0deg,
-    rgb(47, 3, 97) 0%,
-    rgb(62, 2, 119) 100%
-  );
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
-  border-radius: 20em;
-  width: 13vw;
-  height: 3vw;
-}
-
-.cssbuttons-io-button svg {
-  margin-right: 8px;
-}
-
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-}
-
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-}
-
-
-
-
-.carrossel {
-  align-self: center;
-  position: relative;
-  width: 55vw;
-  height: 25vw;
-  overflow: hidden;
-  /* border: 2px solid #ccc; */
-  border-radius: 10px;
-  /* background: rgb(255, 0, 0); */
-}
-
-.slides {
-  display: flex;
-  width: 300%; /* 100% * número de slides */
-  transition: transform 0.5s ease-in-out;
-}
-
-
-.slide {
-  flex: 1 0 100%;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(49, 4, 94, 0.996);
-  border: none;
-  cursor: pointer;
-  padding: 0.5vw;
-  border-radius: 5px;
-}
-
-.prev {
-  left: 0.1em;
-}
-
-.next {
-  right: 0.01em;
 }
