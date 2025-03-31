@@ -1,17 +1,24 @@
-let index = 0;
-        const items = document.querySelectorAll(".carousel-item");
-        const total = items.length;
-        
-        document.getElementById("next").addEventListener("click", () => {
-            index = (index + 1) % total;
-            updateCarousel();
-        });
-        
-        document.getElementById("prev").addEventListener("click", () => {
-            index = (index - 1 + total) % total;
-            updateCarousel();
-        });
-        
-        function updateCarousel() {
-            document.querySelector(".carousel-inner").style.transform = `translateX(-${index * 100}%)`;
-        }
+let indiceImagem = 0;
+
+function mostrarImagem(indice) {
+    const imagens = document.querySelector('.imagens');
+    const totalImagens = imagens.children.length;
+
+    if (indice >= totalImagens) {
+        indiceImagem = 0;
+    } else if (indice < 0) {
+        indiceImagem = totalImagens - 1;
+    } else {
+        indiceImagem = indice;
+    }
+
+    imagens.style.transform = `translateX(${-indiceImagem * 100}%)`;
+}
+
+function mudarImagem() {
+    mostrarImagem(indiceImagem + 1);
+}
+
+mostrarImagem(indiceImagem);
+
+setInterval(mudarImagem, 4000);
