@@ -1,7 +1,7 @@
 .Container_Grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 10fr));
-    gap: 15em;
+    gap: 5em;
     padding-top: 15em;
     padding-left: 10em;
     min-height: 100em;
@@ -9,6 +9,7 @@
 
 .Container_Contatos{
     font-family: var(--fonte-primaria);
+    display: block
 }
 
 .Titulo_Contatos{
@@ -55,11 +56,12 @@
     font-size: 1vw;
 }
 
-  .Teste{
+  /* .Termos{
     margin-top: 1.5em;
     text-align: center;
-    font-size: 1.6vw;
-}
+    font-size: 1px;
+    
+} */
 
 .Envio_Contatos form input label{
     font-size: 1vw;

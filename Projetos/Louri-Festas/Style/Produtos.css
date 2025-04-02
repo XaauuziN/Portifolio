@@ -150,13 +150,13 @@
 
 .bkcp{
     border-radius: 15px;
-    width: 250px;
+    width: 10em;
     background-color: var(--cor-terciaria);
-    padding: 1em 1em 1em 1.5em
+    padding: 1em 0em 0em 0.8em
 }
 
 .lista{
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-size: 0.8vw;
     color: var(--cor-letra-escura);
     margin-bottom: 1em;
@@ -166,7 +166,7 @@
 .Revelar{
     display: flex;
     justify-content: center;
-    padding-left: 5em;
+    margin-left: 6.5em;
     font-size: 1vw;
     cursor: pointer;
     color: var(--cor-letra-escura);
