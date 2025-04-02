@@ -1,25 +1,36 @@
 .Container_Map{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 3fr 3fr; 
     font-family: var(--fonte-primaria);
     padding: 10em 7em;
+    gap: 1em;
 }
 
 #map {
-    height: 40vw;
-    width: 40vw;
+    height: 35vw;
+    width: 35vw;
     z-index: 97;
-    margin-bottom:  1em;
+    /* margin-bottom:  1em; */
+    grid-row: 3;
+    grid-column: 1;
+    margin-top: -10em;
 }
 
 
 #info-box {
-    width: 61vw;
+    height: 35vw;
+    width: 35vw;
     font-family: var(--fonte-primaria);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     background-color: var(--cor-primaria);
     border-radius: 30px;
     color: var(--cor-letra-clara);
     padding: 1em 1em;
     display: none;
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: -5em;
 }
 
 #close-button{
@@ -31,7 +42,15 @@
     padding: 10em 5em;
 }
 
-.Title_Vendedores{
+.Title_Map{
+    font-size: 2.2vw;
+    font-weight: 600;
+    padding-bottom: 1em;
+    grid-template-rows: 1;
+    grid-column: 1;
+}
+
+.Title_Vendedores{grid-template-rows: 1/1;
     font-size: 3vw;
     padding-top: 1em;
     font-weight: 600;
@@ -52,12 +71,6 @@
     padding-top: 0.5em;
     margin-bottom: 1em;
     font-weight: 100;
-}
-
-.Title_Map{
-    font-size: 2.2vw;
-    font-weight: 600;
-    padding-bottom: 1em;
 }
 
 .Infos_Map{

@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louri Festas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="icon" type="png" href="img/Logo/menu_icon.png">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="icon" type="png" href="../img/Logo/menu_icon.png">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -16,38 +21,29 @@
     <section class="Container_Header">
         <header>
             <div class="Header_Logo">
-                <div class="hamburger-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                <!-- Ícone do menu mobile -->
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
             
-                <div class="side-menu">
-                    <nav>
-                        <ul>
-                            <li><i class="fa-solid fa-house"></i><a href="home.html">Home</a></li>
-                            <li><i class="fa-solid fa-cart-shopping"></i><a href="Produtos.html">Produtos</a></li>
-                            <li><i class="fa-solid fa-location-dot"></i><a href="AreasDeAtuacao.html">Áreas de Atuação</a></li>
-                            <li><i class="fa-solid fa-phone"></i><a href="Contatos.html">Contato</a></li>
-                            <li><i class="fa-solid fa-circle-info"></i><a href="QuemSomos.html">Sobre</a></li>
-                            <li><i class="fa-solid fa-lock"></i><a href="Privacidade.html">Política e Privacidade</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            
-                
-            <script src="script.js"></script>
-            <script>
-                // Script para abrir e fechar o menu lateral
-                document.addEventListener("DOMContentLoaded", function() {
-                    var hamburger = document.querySelector(".hamburger-menu");
-                    var sideMenu = document.querySelector(".side-menu");
-            
-                    hamburger.addEventListener("click", function() {
-                        sideMenu.classList.toggle("open");
-                    });
-                });
-            </script>
-                <div class="Traco"></div>
-                <a href="home.html"><img class="Logo_Header" src="img/Logo/home1.svg" alt="açai no pote"> </a>
+                <!-- Menu lateral para mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li><i class="fa-solid fa-house"></i>
+                    <a href="AreasDeAtuacao.html">Áreas de Atuação</a></li>
+                <li><i class="fa-solid fa-phone"></i>
+                    <a href="Contatos.html">Contato</a></li>
+                <li><i class="fa-solid fa-house"></i>
+                    <a href="home.html">Home</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i>
+                    <a href="Produtos.html">Produtos</a></li>
+                <li><i class="fa-solid fa-circle-info"></i>
+                    <a href="QuemSomos.html">Sobre Nós</a></li>
+                <li><i class="fa-solid fa-lock"></i>
+                    <a href="Privacidade.html">Privacidade</a></li>
+                </ul>
+        </div>
+                <a href="../Pages/home.html"><img class="Logo_Header" src="../img/Logo/home1.svg"> </a>
             </div>
 
             <div class="navegacao">
@@ -66,17 +62,17 @@
                     </ul>
                 </nav>
             </div>
-
+<script src="../Script/Menu.js"></script>
     </section>
     <div class="divisor"></div>
-    </header>
+    </header>   
 
     <main>
 
         <!-- Carrossel -->
         <section class="Main_Carrossel">
             <div class="Img_Carrossel">
-                <img src="img/Carrosel/Carrossel Açai.png" alt="">
+                <img src="../img/Carrosel/Carrossel Açai.png" alt="">
             </div>
             <div class="Quadro_Carrossel">
                 <h1 class="Titulo_Carrossel">Cumbuca</h1>
@@ -93,13 +89,13 @@
             </div>
             <div class="Container_Produtos">
                 <ul>
-                    <li><a href="#"><img src="img/SVG/Copo.svg" alt="Copos"><span class="Text_Produtos">Copo</span></a></li>
-                    <li><a href="#"><img src="img/SVG/Prato.svg" alt=""><span class="Text_Produtos">Prato</span></a></li>
-                    <li><a href="#"><img src="img/SVG/Prato_Quadrado.svg" alt=""><span class="Text_Produtos">Prato
+                    <li><a href="#"><img src="../img/SVG/Copo.svg" alt="Copos"><span class="Text_Produtos">Copo</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Prato.svg" alt=""><span class="Text_Produtos">Prato</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Prato_Quadrado.svg" alt=""><span class="Text_Produtos">Prato
 Quadrado</span></a></li>
-                    <li><a href="#"><img src="img/SVG/Bandeija.svg" alt=""><span class="Text_Produtos">Bandeja</span></a></li>
-                    <li><a href="#"><img src="img/SVG/Pote.svg" alt=""><span class="Text_Produtos">Cumbuca</span></a></li>
-                    <li><a href="#"><img src="img/SVG/Neon.svg" alt=""><span class="Text_Produtos">Neon</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Bandeija.svg" alt=""><span class="Text_Produtos">Bandeja</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Pote.svg" alt=""><span class="Text_Produtos">Cumbuca</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Neon.svg" alt=""><span class="Text_Produtos">Neon</span></a></li>
                 </ul>
             </div>
         </section>
@@ -117,7 +113,7 @@ Quadrado</span></a></li>
 produtos dentro das mais rígidas normas brasileiras de qualidade faz da Louri Festas uma empresa orientada para o futuro. Nossos processos produtivos são excessivamente revisados, Nossos colaboradores incessantemente treinados e nossos equipamentos os mais modernos do mercado. Cada processo é cuidadosamente calculado afim de produzir um produto que exceda as normas de qualidade e as expectativas de nossos clientes. Em sua produção plena a Louri Festas tem capacidade de produzir mais de 2000 toneladas de descartáveis por mês.</h2>
             </div>
             <div class="Background_Fabrica">
-                <img src="img/Sobre/fabrica.png" style="max-height: 550px; border-radius: 10px;">
+                <img src="../img/Sobre/fabrica.png" style="max-height: 550px; border-radius: 10px;">
             </div>
         </section>
     </main>
@@ -145,7 +141,7 @@ produtos dentro das mais rígidas normas brasileiras de qualidade faz da Louri F
     <!-- Footer -->
     <footer>
         <section class="Main_Footer">
-            <div class="Logo_Footer"><a href="home.html"><img src="img/Logo/logocolorida.png" style="width: 20vw"></a></div>
+            <div class="Logo_Footer"><a href="home.html"><img src="../img/Logo/logocolorida.png" style="width: 20vw"></a></div>
 
             <div class="Sede_Footer">
                 <p class="Text_Footer">Sede em São Paulo</p>
