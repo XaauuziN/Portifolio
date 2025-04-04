@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 .mobile-menu, .mobile-menu-icon {
     display: none;
 }
@@ -10,24 +11,24 @@
     /* Ícone do menu hambúrguer */
     .mobile-menu-icon {
         display: block;
-        font-size: 2vw;
+        font-size: 50px;
         cursor: pointer;
         color: white;
         position: absolute;
-        top: 15px;
         right: 20px;
         z-index: 100;
-        margin-top: 0.3em;
+        margin: 0.5em 0em 0.1em 0em;
     }
 
     .mobile-menu {
         display: none;
         position: fixed;
-        font-size: 1vw;
+        font-size: 15px;
+        font-family: var(--fonte-primaria);
         top: 0;
         right: 0;
-        width: 20vw;
-        height: 100vh;
+        width: 200px;
+        height: 100%;
         background-color: var(--cor-primaria);
         box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
         padding-top: 6em;
@@ -62,7 +63,7 @@
         transform: translateX(0);
     }
 
-    .mobile-menu li:hover
+    .mobile-menu li:hover,
     .mobile-menu a:hover{
         color:  rgb(114, 5, 99);
     }
@@ -92,118 +93,96 @@
  }
  
  .Logo_Header{
-     width: 6vw;
-     margin-left: 0.5em;
- }
- 
- .navegacao nav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1vw;
-    font-weight: 700;
-    font-family: var(--fonte-primaria); 
-}
- 
- .navegacao nav ul a{
-     margin: 0.2em;
-}
- 
- .Texto_Header{
-    text-decoration: none;
-    color: var(--cor-terciaria);
-    font-weight: 580;
- }
- 
- .Icones_Header{
-     color:var(--cor-terciaria);
-     font-size: 1.9em;
- }
- 
- .Menu_Header{
-     color:var(--cor-terciaria);
-     font-size: 1.5vw;
- }
- 
- .Header_Logo{
-     align-items: center;
-     display: flex;
- }
- 
-.Traco{
-     margin-left: 1em;
-     width: 0.04vw; 
-     height: 1.6vw; 
-     border: 1px #ffffff solid;
-     border-radius: 15px;
-     background-color:var(--cor-terciaria);
-     align-items: center;
- }
- 
- .Menu_Header:hover{
-     color: var(--cor-quintenaria);
-     transition: .3s;
- }
- 
- .navegacao nav ul a:hover{
-     color: var(--cor-quintenaria);
-     transition: .3s;
- }
- 
- .Traco:hover{
-     border: 1px var(--cor-quintenaria) solid;
-     transition: .3s;
+     width: 110px;
+     margin-left: 10px;
  }
 
 /* -----------BANNER---------- */
 
 .Main_Carrossel{
-    margin: 8%  0  2em  0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
 }
 
-.Img_Carrossel img{
-    width: 36vw;
+.carrossel {
+    grid-column: 1;
+    position: relative;
+    max-width: 600px;
+    margin-left: 260px;
+    overflow: hidden;
+}
+
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.imagens img {
+    width: 600px;
+    display: block;
 }
 
 .Quadro_Carrossel{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--cor-secundaria);
-    width: 35vw;
-    height: 27vw;
-    border-radius: 28px;
-    position: relative;
-    right: 5%;  
-    z-index: -1;  
-    
+    color: var(--cor-terciaria);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: -100px;
 }
 
 .Titulo_Carrossel{
-    text-align: left;
-    margin: 1.5em 0 1em 3.5em;
-    color:var(--cor-terciaria);
-    font-family: var(--fonte-primaria);
-    font-size: 2vw; 
-    font-weight: 580;
+    font-size: 30px;
+    font-weight: 900;
+
 }
 
 .Texto_Carrossel{
-    text-align: right;
-    color:var(--cor-terciaria);
-    margin: 0 0 0.5em 5em;
-    font-family: var(--fonte-primaria);
-    font-size: 1.6vw;
-    font-weight: lighter;
-    margin-right: 7em;
-    text-align: justify;
+    font-size: 25px;
+    margin: 50px 50px 50px 50px;
 
 }
 
-#Faixa_Banner{
-    bottom: 30px;
+@media (max-width: 1154px){
+    .Main_Carrossel{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .carrossel{
+        margin-left: 50px;
+        margin-top: -80px;
+        max-width: 400px;
+    }
+    .imagens img {
+        width: 400px;
+        display: block;
+    }
+    .Quadro_Carrossel{
+        margin-left: 50px;
+        width: 400px;
+    }
+    .Titulo_Carrossel{
+        font-size: 20px;
+        font-weight: 900;
     
+    }
+    
+    .Texto_Carrossel{
+        font-size: 15px;
+        margin: 50px 50px 50px 50px;
+    
+    }
 }
+
 /* analisar desalinhamento do banner */
 
 /* ------------PRODUTOS------------- */
@@ -217,12 +196,12 @@
 
 .Título_Produtos{
     font-weight: 600;
-    font-size: 1.93vw;
+    font-size: 30px;
 }
 
 .Texto_Sobre_Produtos{
     font-weight: 100;
-    font-size: 1.28vw;
+    font-size: 25px;
 }
 
 .Container_Produtos{
@@ -234,7 +213,7 @@
 }
 
 .Container_Produtos ul{
-    border-radius: 1.75em;
+    border-radius: 10px;
     background-color: var(--cor-secundaria);
     justify-content: center;
     align-items: center;
@@ -249,7 +228,7 @@
     align-items: center;
     height: 16.094vw;
     width: 85%;
-    border-radius: 30px;
+    border-radius: 0.5em;
     justify-content: center;
 }
 
@@ -271,18 +250,39 @@
     width: 100%;
     display: block;
     float: left;
-    padding: 1rem;
+    margin: 20px;
 }
 
 .Container_Produtos ul li a img{
-    min-height: 4.828vw;
-    max-width: 5.365vw;
+    width: 100px;
+    height: 100px;
 }
 
 .Text_Produtos{
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+}
+
+/* RESPONSIVIDADE PRODUTOS */
+@media (max-width: 1090px) {
+    .Container_Produtos ul li:after {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 1px;
+        background-color: var(--cor-letra-clara);
+        margin-top: 170px;
+    }
+    .Container_Produtos ul{
+        border-radius: 10px;
+        background-color: var(--cor-secundaria);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 1000px;
+    }
 }
 
 .Container_Produtos ul li:hover{
@@ -433,13 +433,6 @@
     justify-content: center;
     background-color: var(--cor-primaria);
 }
-
-/* .footer-bottom small a:hover{
-    background-color: var(--cor-quartenaria);
-    transition: 0.5s;
-    background: none;
-
-} */
 
 .copyright{
     font-family: var(--fonte-primaria);

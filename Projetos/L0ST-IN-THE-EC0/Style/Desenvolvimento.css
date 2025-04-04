@@ -43,7 +43,7 @@
 
 .text_des {
     text-align: justify;
-    font-size: 2vw;
+    font-size: 2rem;
     color: var(--cor-letra-clara);
     font-weight: lighter;
 }
