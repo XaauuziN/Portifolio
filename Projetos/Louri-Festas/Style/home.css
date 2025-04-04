@@ -23,11 +23,11 @@
     .mobile-menu {
         display: none;
         position: fixed;
-        font-size: 15px;
+        font-size: 30px;
         font-family: var(--fonte-primaria);
         top: 0;
         right: 0;
-        width: 200px;
+        width: 150px;
         height: 100%;
         background-color: var(--cor-primaria);
         box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
@@ -53,7 +53,7 @@
 
     .mobile-menu a {
         color: white;
-        font-size: 1.5em;
+        font-size: 20px;
         text-decoration: none;
         display: block;
     }

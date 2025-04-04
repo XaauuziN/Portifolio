@@ -112,7 +112,7 @@
     /* Ícone do menu hambúrguer */
     .mobile-menu-icon {
         display: block;
-        font-size: 2vw;
+        font-size: 40px;
         cursor: pointer;
         color: white;
         position: absolute;
@@ -124,11 +124,11 @@
     .mobile-menu {
         display: none;
         position: fixed;
-        font-size: 1vw;
+        font-size: 19px;
         top: 0;
         right: 0;
-        width: 30vw;
-        height: 100vh;
+        width: 300px;
+        height: 100%;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
         background-color: #37073ff1;
         box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
@@ -183,7 +183,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url(../IMG/Background/background.gif) no-repeat center center;
     background-size: cover;
-    height: 50vw;
+    height: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,32 +191,22 @@
     cursor: default;
 }
 
-.title{
+.title-home{
     color: var(--cor-letra-clara);
     text-shadow: 5px 5px 7px var(--cor-contorno); 
-    font-size: 5vw;
-    margin-left: 3em;
-    margin-top: 2em;
-    margin-right: 3em;
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 50px;
 }
-
-.title_black{
-    color: var(--cor-letra-clara);
-    text-shadow: 10px 10px 10px black; 
-    font-size: 5vw;
-    margin-top: 0.8em;
-    margin-left: 3em;
-    margin-right: 3em;
-}
-
 .text {
     font-weight: lighter;
     color: var(--cor-letra-clara);
     text-shadow: 5px 5px 7px var(--cor-contorno);
-    font-size: 2.5vw;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 3em;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
     text-align: justify;
     opacity: 0;
     visibility: hidden;
@@ -224,12 +214,29 @@
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
+@media (max-width:1024px){
+    .background_1{
+        height: 1000px;
+    }
+    .title-home{
+        font-size: 20px;
+    }
+    .text{
+        opacity: 1;
+        visibility: visible;
+        font-size: 24px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+
+
 /* Crie Seu Personagem */
 .background_2{
     background-color: #4d025a88;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
     width: 100%;
-    height: 35vw;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,18 +244,47 @@
     cursor: default;
 }
 
+@media (max-width:980px){
+    .background_2{
+        height: 1600px;
+    }
+    .cartas-container {
+        margin-left: 50px;
+    }
+}
+
+.title_black{
+    color: var(--cor-letra-clara);
+    text-shadow: 10px 10px 10px black; 
+    font-size: 50px;
+    margin-top: 0.8em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+@media(max-width: 816px){
+    .title_black{
+        font-size: 25px;
+    }
+    .skill-list{
+        font-size: 10px;
+}
+}
+
 /* cards */
 
 .cartas-container {
     display: flex;
-    gap: 0.5em;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .carta {
-    width: 5.5vw;
-    height: 14vw;
+    width: 80px;
+    height:250px;
     background: lightblue;
-    border-radius: 2em;
+    border-radius: 50px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -256,7 +292,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 50px;
     cursor: pointer;
     transition: margin 0.3s ease-in-out;
 }
@@ -267,7 +303,7 @@
 
 @media (min-width: 111px) {
     .carta.selecionada {
-      margin-right: 12em;
+      margin-right: 190px;
     }
   }
 
@@ -304,7 +340,7 @@
 .carta-texto {
     writing-mode: vertical-rl;
     text-orientation: upleft;
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px black;
@@ -313,18 +349,19 @@
 
 .info-lateral {
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 13px;
     display: none;
     position: absolute;
     left: 115%;
-    width: 16vw;
-    height: 20vw;
+    width: 250px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 0.9em;
-    border-radius: 1em;
+    border-radius: 10px;
     transition: opacity 0.3s ease, transform 0.3s ease;
     cursor: default;
+    z-index: 999;
 }
 
 .carta.selecionada .info-lateral {
@@ -338,24 +375,30 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url(../IMG/Background/background_3.gif) no-repeat center center;
     background-size: cover;
-    height: 45vw; 
+    height: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: default;
 }
 
+@media (max-width:704px){
+    .skill-list{
+        font-size: 10px;
+    }
+}
+
 .skill_list{
-    margin-top: 1em;
+    margin-top: 50px;
     color: var(--cor-letra-clara);
-    font-size: 2.5vw;
+    font-size: 35px;
     list-style: none;
     text-shadow: 10px 10px 8px var(--cor-contorno);
 }
 
 h1 {
     font-weight: lighter;
-    font-size: 5vw;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
@@ -368,7 +411,11 @@ h1 {
     cursor: default;
     background-color: #00000088;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    height: 45vw;
+    height: 900px;
+}
+
+.title-equipe{
+    font-size: 40px;
 }
 
 .team {
@@ -376,6 +423,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .member{
@@ -385,36 +433,74 @@ h1 {
 }
 
 .avatar img{
-    width: 6vw;
-    height: 6vw;
-    border-radius: 50em;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
     background-color: #ccc;
+}
+
+@media (max-width:750px){
+    .member{
+        gap: 5px;
+    }
+    .avatar img{
+        width: 80px;
+        height: 80px;
+    }
+    .name_1{
+        color: pink;
+        font-size:20px;
+    }
+    
+    .name_2{
+        color: red;
+        font-size: 20px;
+    }
+    
+    .name_3{
+        color: purple;
+        font-size: 20px;
+    }
+    
+    .name_4{
+        color: blue;
+        font-size: 20px;
+    }
+    
+    
+    .name_5{
+        color: green;
+        font-size: 20px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
 }
 
 .name_1{
     color: pink;
-    font-size: 3vw;
+    font-size:50px;
 }
 
 .name_2{
     color: red;
-    font-size: 3vw;
+    font-size: 50px;
 }
 
 .name_3{
     color: purple;
-    font-size: 3vw;
+    font-size: 50px;
 }
 
 .name_4{
     color: blue;
-    font-size: 3vw;
+    font-size: 50px;
 }
 
 
 .name_5{
     color: green;
-    font-size: 3vw;
+    font-size: 50px;
 }
 
   /* --------------FOOTER------------- */
@@ -423,7 +509,7 @@ h1 {
     margin-top: em;
     font-family: var(--fonte-primaria);
     text-shadow: 2px 2px 4px black;
-    font-size: 1vw;
+    font-size: 15px;
     font-weight: 500;
     display: flex;
     background-color: #00000088;
@@ -434,7 +520,7 @@ h1 {
 
   .footer-bottom {
     width: 100%;
-    height: 4.1vw;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,6 +529,6 @@ h1 {
 .copyright{
     color: var(--cor-letra-clara);
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 25px;
     cursor: default;
 }
