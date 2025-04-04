@@ -249,7 +249,13 @@
         height: 1600px;
     }
     .cartas-container {
-        margin-left: 50px;
+        margin-left: 80px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .skill-list{
+        font-size: 5px;
     }
 }
 
@@ -267,8 +273,8 @@
         font-size: 25px;
     }
     .skill-list{
-        font-size: 10px;
-}
+        font-size: 5px;
+    }
 }
 
 /* cards */
@@ -384,14 +390,18 @@
 
 @media (max-width:704px){
     .skill-list{
-        font-size: 10px;
+        font-size: 5px;
     }
 }
 
+.title-skills{
+    font-size: 40px;
+}
+
 .skill_list{
-    margin-top: 50px;
+    margin-top: 25px;
     color: var(--cor-letra-clara);
-    font-size: 35px;
+    font-size: 25px;
     list-style: none;
     text-shadow: 10px 10px 8px var(--cor-contorno);
 }
