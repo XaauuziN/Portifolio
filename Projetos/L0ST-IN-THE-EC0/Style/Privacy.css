@@ -1,5 +1,4 @@
 .container {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,9 +13,12 @@
 }
 
 .container_rpg{
+    height: 920px;
     font-weight: lighter;
     cursor: default;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 50px;
     line-height: 1.6;
     text-align: justify;
     color: var(--cor-letra-clara);
@@ -67,5 +69,11 @@
     }
     .list-item{
         font-size: 20px;
+    }
+}
+
+@media (max-width:375px){
+    .container_rpg{
+        height: 1050px;
     }
 }
