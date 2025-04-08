@@ -1,22 +1,21 @@
 .background_Main_Equipe{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
     background-position: center;
-    height: 130vh;
+    height: 1200px;
 }
 
 .equipe_cards {
-    
     display: flex;
     justify-content: center;
-    gap:10em;
+    gap:100PX;
     flex-wrap: wrap;
-    
-    padding: 10em;
+    margin: 100px 0px 0px 0px;
 }
 
-@media (max-width: 1023px) {
-    .equipe_cards {
-        padding: 4em;
+@media (max-width: 768px) {
+    .background_Main_Equipe{
+        height: 1500px;
+        margin-bottom: 900px;
     
     }
   }
@@ -27,18 +26,16 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%2368037A' cx='50' cy='0' r='50'/%3E%3Cg fill='%23640375' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23600371' cx='50' cy='100' r='50'/%3E%3Cg fill='%235c036c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23580367' cx='50' cy='200' r='50'/%3E%3Cg fill='%23540363' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2350025e' cx='50' cy='300' r='50'/%3E%3Cg fill='%234c0259' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23480255' cx='50' cy='400' r='50'/%3E%3Cg fill='%23440250' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2341024c' cx='50' cy='500' r='50'/%3E%3Cg fill='%233d0247' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23390242' cx='50' cy='600' r='50'/%3E%3Cg fill='%2335023e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23310239' cx='50' cy='700' r='50'/%3E%3Cg fill='%232d0234' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23290130' cx='50' cy='800' r='50'/%3E%3Cg fill='%2325012b' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23210126' cx='50' cy='900' r='50'/%3E%3Cg fill='%231d0122' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2319011D' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: contain;
+    position: relative;
     text-align: center;
     border-radius: 15px;
     box-shadow: 1px 5px 60px 0px purple;
-    transform-style: preserve-3d; 
-    transition: all 0.5s ease-in; 
-    max-width: 17vw; 
-    min-width: 10vw; 
+    transform-style: preserve-3d;
 }
 
 .card .card-inner {
-    width: 17vw;
-    height: 21vw;
+    width: 300PX;
+    height: 400PX;
     transform-style: preserve-3d;
     transition: all 0.1s ease-in-out;
     display: flex;
@@ -49,8 +46,8 @@
 
 
 .card .card-border-top {
-    width: 10vw;
-    height: 0.3vw;
+    width: 200PX;
+    height: 3PX;
     background: purple;
     border-radius: 15px;
     margin: auto;
@@ -63,7 +60,7 @@
     text-align: center;
     display: block;
     padding-top: 10px;
-    font-size: 3vw;
+    font-size: 50px
 }
 
 
@@ -73,24 +70,24 @@
     display: block;
     text-align: center;
     padding-top: 3px;
-    font-size: 2vw;
+    font-size: 35px
 }
 
 
 .card .img {
-    width: 5vw;
-    height: 5vw;
+    width: 100px;
+    height: 100px;
     background: purple;
     border-radius: 15px;
     margin: auto;
-    margin-top: 0.5em;
+    margin-top: 10px;
 }
 
 
 .card button {
-    font-size: 1.5vw;
-    width: 10vw;
-    height: 3vw;
+    font-size: 25px;
+    width: 190px;
+    height: 50px;
     border-radius: 8px;
     border: none;
     background: rgba(128, 0, 128, 0.486);
@@ -98,21 +95,8 @@
     font-weight: 600;
     cursor: pointer;
     text-wrap: nowrap;
-    margin-top: 0.5em;
     font-weight: lighter;
-}
-
-.button_card{
-    font-size: 1.5vw;
-    width: 10vw;
-    padding: 8px 25px;
-    border-radius: 8px;
-    border: none;
-    background: rgba(128, 0, 128, 0.486);
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    font-weight: lighter;
+    margin-top: 20px;
 }
 
 .card button:hover {
@@ -125,9 +109,8 @@
 
 .card .front, .card .back {
     position: absolute;
-    width: 25vw;
+    height: 400px;
     border-radius: 15px;
-    height: 21vw;
     backface-visibility: hidden; 
 }
 
@@ -147,13 +130,7 @@
 }
 
 .text_equipe{
-    line-height: 1; 
-    font-weight: lighter;
-    margin: 0.5em;
+    margin: 10px;
     cursor:default;
-    font-size: 1.4vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    text-align: justify;
+    font-size: 21px;
 }
