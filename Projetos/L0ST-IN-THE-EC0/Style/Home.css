@@ -495,7 +495,7 @@ h1 {
 /* HOME PARTE 1 */
 @media (max-width:980px){
     .background_2{
-        height: 1600px;
+        height: 450px;
     }
     .cartas-container {
         margin-left: 40px;

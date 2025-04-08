@@ -19,15 +19,15 @@ const wrapper = document.getElementById("wrapper");
 const container = document.getElementById("cartas-container");
 
 // Clona as cartas para criar loop
-function duplicarCartas() {
-    const cartas = container.children;
-    const total = cartas.length;
-    for (let i = 0; i < total; i++) {
-        const clone = cartas[i].cloneNode(true);
-        clone.setAttribute("data-clone", "true");
-        container.appendChild(clone);
-    }
-}
+// function duplicarCartas() {
+//     const cartas = container.children;
+//     const total = cartas.length;
+//     for (let i = 0; i < total; i++) {
+//         const clone = cartas[i].cloneNode(true);
+//         clone.setAttribute("data-clone", "true");
+//         container.appendChild(clone);
+//     }
+// }
 
 duplicarCartas();
 
