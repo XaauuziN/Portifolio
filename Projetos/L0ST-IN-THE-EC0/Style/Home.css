@@ -244,7 +244,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 30px;
+    gap: 80px;
     padding: 20px;
     scroll-snap-type: x mandatory;
 }
@@ -319,18 +319,17 @@
 /* Info-lateral: aparece ao lado no desktop */
 .info-lateral {
     text-align: justify;
-    font-size: 14px;
+    font-size: 19px;
     display: none;
     position: absolute;
     top: 0;
     left: 105%;
     width: 250px;
-    max-width: 90vw;
-    height: auto;
+    height: 260px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 0.9em;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: opacity 0.3s ease, transform 0.3s ease;
     cursor: default;
     z-index: 10;
@@ -498,6 +497,7 @@ h1 {
         height: 450px;
     }
     .cartas-container {
+        gap: 80px;
         margin-left: 40px;
     }
     .copyright{
@@ -507,7 +507,7 @@ h1 {
         font-size: 5px;
     }
     .info-lateral {
-        width: 150px;
+        width: 230px;
     }
 }
 
