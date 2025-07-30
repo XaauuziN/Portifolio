@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louri Festas</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="icon" type="png" href="../img/Logo/menu_icon.png">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="Container_Header">
+        <header>
+            <div class="Header_Logo">
+                <!-- Ícone do menu mobile -->
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+            
+                <!-- Menu lateral para mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li><i class="fa-solid fa-house"></i>
+                    <a href="AreasDeAtuacao.html">Atuação</a></li>
+                <li><i class="fa-solid fa-phone"></i>
+                    <a href="Contatos.html">Contato</a></li>
+                <li><i class="fa-solid fa-house"></i>
+                    <a href="home.html">Home</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i>
+                    <a href="Produtos.html">Produtos</a></li>
+                <li><i class="fa-solid fa-circle-info"></i>
+                    <a href="QuemSomos.html">Sobre Nós</a></li>
+                <li><i class="fa-solid fa-lock"></i>
+                    <a href="Privacidade.html">Privacidade</a></li>
+                </ul>
+        </div>
+                <a href="../Pages/home.html"><img class="Logo_Header" src="../img/Logo/home1.svg"> </a>
+            </div>
+
+            <div class="navegacao">
+                <nav id="nav">
+                    <ul>
+                        <li><a class="Texto_Header" href="Contatos.html">Entre em contato!</a></li>
+                        <li><a class="Icones_Header" href="+55114156-3559" target="_blank"><i class="fa-solid fa-phone"
+                                    ;></i></a></li>
+                        <li><a class="Icones_Header" href="https://www.instagram.com/lourifestas/" target="_blank"><i
+                                    class="fa-brands fa-instagram" ;></i></a></li>
+                        <li><a class="Icones_Header" href="https://www.facebook.com/lourifestas" target="_blank"><i
+                                    class="fa-brands fa-facebook" ;></i></a></li>
+                        <li><a class="Icones_Header"
+                                href="https://wa.me/5511981153279"
+                                target="_blank"><i class="fa-brands fa-whatsapp" ;></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+<script src="../Script/Menu.js"></script>
+    </section>
+    <div class="divisor"></div>
+    </header>   
+
+    <main>
+
+        <!-- Carrossel -->
+        <section class="Main_Carrossel">
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="../img/Carrosel/Carrossel Açai.png" alt="Imagem 1">
+                    <img src="../img/Carrosel/Carrossel Açai.png" alt="Imagem 2">
+                    <img src="../img/Carrosel/Carrossel Açai.png" alt="Imagem 3">
+                </div>
+            </div>
+            <div class="Quadro_Carrossel">
+                <h1 class="Titulo_Carrossel">CONHEÇA NOSSOS PRODUTOS!!!</h1>
+                <p class="Texto_Carrossel">Apresentamos nossa completa linha de copos, pratos, bandejas cumbucas e nossa exclusiva linha <strong>NEON</strong> nos quais fabricamos e dedicamos total qualidade para cada um deles</p>
+            </div>
+            <script src="../Script/carrossel.js"></script>
+        </section>
+
+        <!-- Produtos -->
+
+        <section class="Main_Produtos">
+            <div class="Container_Produtos_Text">
+                <h1 class="Título_Produtos">Produtos</h1>
+                <p class="Texto_Sobre_Produtos"> Apresentamos nossa linha completa de produtos nos quais fabricamos e dedicamos total qualidade para cada um deles.</p>
+            </div>
+            <div class="Container_Produtos">
+                <ul>
+                    <li><a href="#"><img src="../img/SVG/Copo.svg" alt="Copos"><span class="Text_Produtos">Copo</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Prato.svg" alt=""><span class="Text_Produtos">Prato</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Prato_Quadrado.svg" alt=""><span class="Text_Produtos">Prato Quadrado</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Bandeija.svg" alt=""><span class="Text_Produtos">Bandeja</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Pote.svg" alt=""><span class="Text_Produtos">Cumbuca</span></a></li>
+                    <li><a href="#"><img src="../img/SVG/Neon.svg" alt=""><span class="Text_Produtos">Neon</span></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="Faixa_divisoria"></div>
+
+        <!-- Qualidade -->
+        <section class="Main_Qualidade">
+
+            <div class="Quadro_Qualidade">
+                <h1 class="Titulo_Qualidade"><strong>Qualidade Louri Festas</strong></h1>
+
+                <p class="Texto_Qualidade">A palavra de ordem em nosso processo de qualidade. Produzir os melhores produtos dentro das mais rígidas normas brasileiras de qualidade faz da Louri Festas uma empresa orientada para o futuro. Nossos processos produtivos são excessivamente revisados, Nossos colaboradores incessantemente treinados e nossos equipamentos os mais modernos do mercado. Cada processo é cuidadosamente calculado afim de produzir um produto que exceda as normas de qualidade e as expectativas de nossos clientes. Em sua produção plena a Louri Festas tem capacidade de produzir mais de 2000 toneladas de descartáveis por mês.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sobre Nos -->
+    <section class="Informações_Main">
+        <div class="Container_Main">
+            <h2 class="Titulo_About">Atuamos em Todo o Brasil</h2>
+            <p class="Texto_About">Com orgulho, atuamos em todo o Brasil, levando nossos serviços de excelência a cada canto deste país.</p>
+            <a href="AreasDeAtuacao.html" class="Button_About">Áreas De Atuação</a>
+        </div>
+        <div class="Container_Main">
+            <h2 class="Titulo_About">Quem Somos</h2>
+            <p class="Texto_About">Somos uma empresa familiar fundada em 2005 onde priorizamos a satisfação de nossos
+                clientes.</p>
+            <a href="QuemSomos.html" class="Button_About">Quem Somos!?</a>
+        </div>
+        <div class="Container_Main">
+            <h2 class="Titulo_About">Catálogo</h2>
+            <p class="Texto_About">Clique no botão abaixo e faça o download do nosso catálogo virtual de produtos.</p>
+            <a href="#" class="Button_About">Download!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="Main_Footer">
+            <div class="Logo_Footer"><a href="home.html"><img src="../img/Logo/logocolorida.png" style="width: 20vw"></a></div>
+
+            <div class="Sede_Footer">
+                <p class="Text_Footer">Sede em São Paulo</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="Text_Footer">Rua Gabriel Jorge Salomão, 1080 Fazendinha - Santana de Parnaíba SP - 06530-005</p>
+            </div>
+
+            <div class="Contato_Footer">
+                <p class="Text_Footer">Fale conosco</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-solid fa-phone"></i>
+                <p class="Text_Footer">(11) 4156-3559 <br>(11) 4156-5740</p>
+                <div class="Traco_Footer"></div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <p class="Text_Footer">(11) 98115-3279</p>
+            </div>
+        </section>
+
+        <div style="width: 100%; height: 100%; border: 1px #3D8361 solid"></div>
+
+        <section class="footer-bottom">
+            <small class="copyright">Copyright 2023 © Indústria de Plásticos Lourifestas Eireli <a href="Privacidade.html"
+                    style="text-decoration: none; color:#ffffff">• Politica de Privacidade</a></small>
+        </section>
+    </footer>
+</body>
+
+</html>

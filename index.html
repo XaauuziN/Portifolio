@@ -1,69 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Portifolio</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
-  <link rel="stylesheet" href="Login/Login.css">
-  <link rel="icon" type="image/png" href="Imagens/login_icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="png" href="Imagens/Icons/logo_icon.png">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="Home/Home.css">
 </head>
 <body>
-    <div class="secLion">
-        <div class="container">
-            <div class="row full-height justify-content-center">
-                <div class="col-12 text-center align-self-center py-5">
-                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                        <h6 class="mb-0 pb-3"><span>Log in </span><span>Sign Up </span></h6>
-                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                        <label for="reg-log"></label>
-                        <div class="card-3d-wrap mx-auto">
-                            <div class="card-3d-wrapper">
-                                <div class="card-front">
-                                    <div class="center-wrap">
-                                        <div class="section text-center">
-                                            <h4 class="mb-4 pb-3">Log In</h4>
-                                            <div class="form-group">
-                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                                <i class="input-icon uil uil-at"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                            </div>
-                                            <a href="Home/Home.html" class="btn mt-4" id="login-submit">Submit</a>
-                                            <p class="mb-0 mt-4 text-center"><a href="Login/Forgot.html" class="link">Forgot Your Password?</a></p>
-                                        </div>              
-                                    </div>
-                                </div>
-                                <div class="card-back">
-                                    <div class="center-wrap">
-                                        <div class="section text-center">
-                                            <h4 class="mb-4 pb-3">Sign Up</h4>
-                                            <div class="form-group">
-                                                <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-                                                <i class="input-icon uil uil-user"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="email" name="logemail-signup" class="form-style" placeholder="Your Email" id="logemail-signup" autocomplete="off">
-                                                <i class="input-icon uil uil-at"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="password" name="logpass-signup" class="form-style" placeholder="Your Password" id="logpass-signup" autocomplete="off">
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                            </div>
-                                            <a href="Home/Home.html" class="btn mt-4" id="signup-submit">Submit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- MENU CABEÇALHO -->
+    <section class="container__header">
+        <header>
+            <div class="logo">
+                <a href="#home"><strong>Gabriel</strong></a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#home" onclick="selecionar()">Home</a></li>
+                    <li><a href="#sobremim" onclick="selecionar()">About Me</a></li>
+                    <li><a href="#portifolio" onclick="selecionar()">Portifolio</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>    
+        </header>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="container-banner">
+            <div class="container-img">
+            <img class="img_perfil" src="Projetos/L0ST-IN-THE-EC0/IMG/Equipe/EU.png" alt="">    <!--    MINHA FOTO   -->
+            </div>
+            <h1>Gabriel Felício</h1>
+            <h2>Student</h2>
+            <div class="redes">
+                <a href="https://github.com/XaauuziN" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriellfelicio/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5512997935579&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/xaauu__/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobremim" class="sobremim">
+        <div class="container-section">
+            <h2>About Me</h2>
+            <p><span>Hello, my name is Gabriel.</span> 
+<br>               
+<br>Português:
+<br>
+Sou uma pessoa incrivelmente dedicada e apaixonada pela área de tecnologia. Minha determinação é notável, pois nunca desisto dos meus sonhos, sempre buscando superar desafios e alcançar meus objetivos. Minha paixão pela tecnologia brilha em cada passo que dou, demonstrando meu comprometimento genuíno e minha vontade inabalável de explorar e dominar as maravilhas desse mundo em constante evolução. Meu entusiasmo e desejo de aprendizado são inspiradores, e meu compromisso em seguir meu caminho na área tecnológica é uma prova viva da minha dedicação incansável. Com minha mentalidade determinada e amor pela tecnologia, estou preparado para conquistar um futuro repleto de realizações excepcionais.
+<br>
+<br>English:
+<br>
+I am an incredibly dedicated person and passionate about technology. My determination is remarkable, as I never give up on my dreams, always seeking to overcome challenges and achieve my goals. My passion for technology shines through in every step I take, demonstrating my genuine commitment and unwavering drive to explore and master the wonders of this ever-evolving world. My enthusiasm and desire to learn are inspiring, and my commitment to following my path in technology is living proof of my tireless dedication. With my determined mindset and love of technology, I am poised for a future filled with exceptional accomplishments.</p>
+            <div class="lista">
+                <!-- dados pessoais -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birth:</strong>
+                            2004/01/11
+                        </li>
+                        <li>
+                            <strong>Telephone:</strong>
+                            +55 (12) 99793-5579
+                        </li>
+                        <li>
+                            <strong>E-mail:</strong>
+                            gabrielfelilemes@gmail.com
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+                <!-- tecnologias -->
+                <div class="col">
+                    <h3>Technologies</h3>
+                    <div class="conteiner-tecnologias">
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                         <div class="tecnologias">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                        </div> 
+                        
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="tecnologias">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <button class="button" onclick="window.location.href='https://drive.google.com/file/d/131_i30nTB5Y_1x3XIBtmBD-Yco_qjNzz/view">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download CV</span>
+                </span>
+            </button>
         </div>
-    </div>
+    </section>
 
-    <script src="Login/Login.js"></script>
+    <!-- PORTIFOLIO -->
+    <section id="portifolio" class="portifolio">
+        <div class="container-section">
+            <h2>PORTIFOLIO</h2>
+            <div class="galeria">
+                <div class="projetos">
+                    <img src="Imagens/Background/PJ1.png" alt="">
+                    <div class="overlay">
+                        <a href="Projetos/Demonstrativo JS/PJ1.html" target="_blank" style = "text-decoration: none; color: #ffffff;">
+                        <h3>Neon Buttons With Animated Background</h3></a>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <img src="Imagens/Background/LFest.png" alt="">
+                    <div class="overlay">
+                        <a href="Projetos/Louri-Festas/Pages/home.html" target="_blank" style = "text-decoration: none; color: #ffffff;">
+                        <h3>Louri Festas<BR>(CANCELADO)</h3></a>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <img src="Imagens/Background/LTEC.png" alt="">
+                    <div class="overlay">
+                        <a href="Projetos/L0ST-IN-THE-EC0/Pages/Home.html" target="_blank" style = "text-decoration: none; color: #ffffff;">
+                        <h3>Lost in the ECO</h3></a>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <img src="Imagens/Background/Tela_login.png" alt="">
+                    <div class="overlay">
+                        <a href="Projetos/Tela-Login-Interativa/index.html" target="_blank" style = "text-decoration: none; color: #ffffff;">
+                        <h3>Tela de Login</h3></a>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <img src="Imagens/Background/coming soon.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Coming Soon</h3>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <img src="Imagens/Background/coming soon.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Coming Soon</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="Home.js"></script>
 </body>
 </html>

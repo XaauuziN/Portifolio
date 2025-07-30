@@ -5,6 +5,7 @@
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
     padding: 50px 20px;
+    cursor: default;
 }
 
 .sobremim .container-section{
@@ -23,44 +24,53 @@
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    cursor: default;
 }
 
 .sobremim .container-section p span{
     color: var(--cor-secundaria);
     font-weight: bold;
+    cursor: default;
 }
 
 .sobremim .lista{
     display: flex;
+    cursor: default;
 }
 
 .sobremim .lista .col{
     width: 50%;
+    cursor: default;
 }
 
 .sobremim .lista .col h3{
     font-size: 28px;
     font-family: var(--fonte-terciaria);
     margin-bottom: 25px;
+    cursor: default;
 }
 
 .sobremim .lista .col ul{
     list-style: none;
+    cursor: default;
 }
 
 .sobremim .lista .col ul li{
     margin: 12px 0;
+    cursor: default;
 }
 
 .sobremim .lista .col ul li strong{
     display: inline-block;
     color: var(--cor-secundaria);
     width: 130px;
+    cursor: default;
 }
 
 
 .sobremim .lista .col .conteiner-tecnologias{
     display: flex;
+    cursor: default;
     flex-wrap: wrap;
 }
 
@@ -75,6 +85,7 @@
     align-items: center;
     justify-content: center;
     transition: .3s;
+    cursor:default;
 }
 
 .sobremim .lista .col .conteiner-tecnologias .tecnologias:hover{

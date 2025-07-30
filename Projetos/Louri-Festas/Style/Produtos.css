@@ -1,0 +1,218 @@
+.Seleção_Produtos{
+    font-family: var(--fonte-primaria);
+    font-size: 0.7vw;
+    color: var(--cor-letra-clara);
+    display: flex;
+    padding: 10em 7em;
+    justify-content: center;
+    text-align: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.Seleção_Produtos img{
+    width: 5.3vw;
+    max-height: 3.1vw;
+    margin-bottom: 15px;
+    
+}
+
+.Produtos_Copo{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 2.4em;
+}
+
+.Produtos_Prato{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 2.5em;
+}
+
+.Produtos_Prato_Q{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 4.2em;
+}
+
+.Produtos_Cumbuca{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 3.9em;
+}
+
+.Produtos_Bandejas{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 3.3em;
+}
+
+.Produtos_Neon{
+    width: 7.9vw; 
+    height: 7.9vw; 
+    background: var(--cor-secundaria); 
+    border-radius: 20px;
+    padding-top: 2.8em;
+}
+
+.Produtos_Copo:hover,
+.Produtos_Prato:hover,
+.Produtos_Prato_Q:hover,
+.Produtos_Cumbuca:hover,
+.Produtos_Bandejas:hover,
+.Produtos_Neon:hover{
+    background-color: rgba(95, 172, 135, 0.5);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Div_Produtos{
+    width: 100%; 
+    height: 100%; 
+    border: 1px #3D8361 solid;
+}
+
+.Catalogo{
+    font-size: 1vw;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 1em 5em;
+    gap: 0.5em;
+}
+
+.Catalogo a{
+    text-decoration: none;
+    color: var(--cor-letra-escura);
+}
+
+.Catalogo a:hover{
+    color: var(--cor-quintenaria);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Pdf{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    width: 20%;
+    border-radius: 6px;
+    position: relative;
+    top: -1em;
+    left: 11.5em
+}
+
+.hidden{
+    display: none;
+}
+
+/* Seletor de Produto */
+
+
+/* -------------------------------------------------- */
+
+/* Copo */
+
+
+
+.Copos{
+    font-family: var(--fonte-primaria);
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.Copo_um{
+    display: flex;
+    align-items: center;
+}
+
+.Border{
+    width: 16.2vw; 
+    max-height: 26.6vw;
+    border-radius: 15px; 
+    border: 1px #3D8361 solid;
+
+    overflow: hidden;
+    transition: height 0.3s ease-in-out; /* Transição suave da altura */
+}
+
+.bkcp{
+    border-radius: 15px;
+    width: 10em;
+    background-color: var(--cor-terciaria);
+    padding: 1em 0em 0em 0.8em
+}
+
+.lista{
+    padding-top: 0.5em;
+    font-size: 0.8vw;
+    color: var(--cor-letra-escura);
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.Revelar{
+    display: flex;
+    justify-content: center;
+    margin-left: 6.5em;
+    font-size: 1vw;
+    cursor: pointer;
+    color: var(--cor-letra-escura);
+}
+
+.Revelar:hover{
+    color: var(--cor-quintenaria);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+.bkimg{
+    display: flex;
+    justify-content: center;
+    width: 11.4vw;
+    background-color: var(--cor-secundaria);
+    margin-bottom: 1em;
+    border-radius: 15px;
+    margin-left: 2em;
+
+}
+
+.Img_cp{
+    border-radius: 15px;
+    width: 7vw;
+}
+
+.bktitle{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-letra-clara);
+    width: 9.5vw;
+    height: 1.06vw;
+    border-radius: 10px;
+    background-color: var(--cor-letra-escura);
+    font-size: 0.8vw;
+    margin-bottom: 1em;
+    font-weight: 600;
+    margin-left: 3em;
+}
+
+.ulinfo{
+    padding-top: 1em;
+    font-size: 0.8vw;
+    color: var(--cor-letra-escura);
+    margin-bottom: 0.1em;
+    font-weight: 600;
+}
